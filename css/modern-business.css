@@ -3,24 +3,101 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
+
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+* {
+    border-width: 1px;
+    border-color: #DDDDDD;
+}
+
 body {
-  padding-top: 56px;
-  font-family: "Microsoft JhengHei", "微軟正黑", "Times New Roman", "Sans-Serif";
-  font-size:12pt;
-  overflow-y: scroll;
-  overflow-x: hidden;
+    padding-top: 62px;
+    font-family: "cwTeXYen", "Microsoft JhengHei", "微軟正黑", "Times New Roman", "Sans-Serif";
+    font-size: 16pt;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-control-prev {
+    margin-left: -10vw;
+}
+
+.carousel-control-next {
+    margin-right: -10vw;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%)
 }
 
 .portfolio-item {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* 導覽列高度 */
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 54px;
+    height: 54px;
+    padding-top: 0;
+}
+
+.strategy {
+    position: relative;
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 2px #cccccc
+}
+
+.strategy-photo {
+    background-color: #C0C0C0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 90px;
+    width: 90px;
+}
+
+.strategy-name {
+    position: absolute;
+    top: 20px;
+    left: 125px;
+}
+
+.strategy-number {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+.strategy-max {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+
+.strategy-graph {
+    position: absolute;
+    top: 175px;
+    left: 190px;
+}
+
+.strategy-buttons {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
