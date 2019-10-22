@@ -11,11 +11,33 @@
 }
 
 body {
-    padding-top: 62px;
+    /* padding-top: 62px; */
     font-family: "cwTeXYen", "Microsoft JhengHei", "微軟正黑", "Times New Roman", "Sans-Serif";
     font-size: 16pt;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.bg-test {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08);
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-property: background-color;
+    -o-transition-duration: 0.5s;
+}
+
+.bg-light {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08);
+    -moz-transition-property: background-color;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-property: background-color;
+    -o-transition-duration: 0.5s;
 }
 
 .carousel-item {
@@ -28,20 +50,31 @@ body {
 }
 
 .carousel-control-prev {
-    margin-left: -10vw;
+    width: 3%;
 }
 
 .carousel-control-next {
-    margin-right: -10vw;
+    width: 3%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(100%)
+    filter: invert(100%);
 }
 
 .portfolio-item {
     margin-bottom: 30px;
+}
+
+.btn-outline-secondary {
+    color: #000000;
+    border-color: #BBBBBB;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #BBBBBB;
+    border-color: #BBBBBB;
 }
 
 
@@ -56,9 +89,9 @@ body {
 
 .strategy {
     position: relative;
-    padding: 10px;
     height: 300px;
-    width: 400px;
+    width: 380px;
+    max-width: 100vw;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 2px 2px #cccccc
 }
@@ -100,4 +133,25 @@ body {
     position: absolute;
     bottom: 0px;
     width: 100%;
+}
+
+.footer-menu ul {
+    padding-inline-start: 0px;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer-menu ul li a {
+    color: white;
+    font-weight: 80;
+}
+
+.index-text {
+    color: #0D1B46;
+    font-style: initial;
+    text-align: center;
+    font-weight: 600;
 }
