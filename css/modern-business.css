@@ -10,26 +10,21 @@
     border-color: #DDDDDD;
 }
 
-html {
-    font-size: 16px;
-    font-size: 1rem;
-}
-
 @media (max-width: 460px) {
     html {
-        font-size: 12px;
+        font-size: 8pt;
     }
 }
 
 @media (max-width: 640px) {
     html {
-        font-size: 14px;
+        font-size: 10pt;
     }
 }
 
 body {
     /* padding-top: 62px; */
-    font-family: "cwTeXYen", "Microsoft JhengHei", "微軟正黑", "Times New Roman", "Sans-Serif";
+    font-family: -apple-system, BlinkMacSystemFont, "cwTeXYen", "Microsoft JhengHei", "微軟正黑", "Times New Roman", "Sans-Serif", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #EEEEEE;
@@ -128,18 +123,17 @@ body {
 }
 
 .strategy-name {
-    font-size: 16pt;
     position: absolute;
     top: 20px;
     left: 125px;
 }
 
 .strategy-name h4 {
-    font-size: 1.2rem;
+    font-size: 16pt;
 }
 
 .strategy-name h5 {
-    font-size: 1rem;
+    font-size: 12pt;
 }
 
 .strategy-number {
@@ -149,19 +143,19 @@ body {
 }
 
 .strategy-number h2 {
-    font-size: 1.5rem;
+    font-size: 20pt;
 }
 
 .strategy-max {
     position: absolute;
-    top: 200px;
+    top: 190px;
     left: 20px;
-    font-size: 1rem;
+    font-size: 12pt;
 }
 
 .strategy-graph {
     position: absolute;
-    top: 175px;
+    top: 155px;
     right: 10px;
 }
 
@@ -195,5 +189,5 @@ body {
     color: #0D1B46;
     font-style: initial;
     text-align: center;
-    font-weight: 600;
+    font-weight: 300;
 }
