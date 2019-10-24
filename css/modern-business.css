@@ -10,12 +10,33 @@
     border-color: #DDDDDD;
 }
 
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 460px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    html {
+        font-size: 12px;
+    }
+}
+
 body {
     /* padding-top: 62px; */
     font-family: "cwTeXYen", "Microsoft JhengHei", "微軟正黑", "Times New Roman", "Sans-Serif";
-    font-size: 16pt;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: #EEEEEE;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .bg-test {
@@ -89,8 +110,8 @@ body {
 
 .strategy {
     position: relative;
-    height: 300px;
-    width: 380px;
+    height: 280px;
+    width: 350px;
     max-width: 100vw;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 2px 2px #cccccc
@@ -106,33 +127,56 @@ body {
 }
 
 .strategy-name {
+    font-size: 16pt;
     position: absolute;
     top: 20px;
     left: 125px;
 }
 
+
+/* .strategy-name h4 {
+    font-size: 20pt;
+}
+
+.strategy-name h5 {
+    font-size: 16pt;
+} */
+
 .strategy-number {
     position: absolute;
     top: 150px;
     left: 20px;
+    /* font-size: 16pt; */
 }
+
+
+/* .strategy-number h2 {
+    font-size: 24pt;
+} */
 
 .strategy-max {
     position: absolute;
     top: 200px;
     left: 20px;
+    /* font-size: 16pt; */
 }
 
 .strategy-graph {
     position: absolute;
     top: 175px;
-    left: 190px;
+    right: 10px;
 }
 
 .strategy-buttons {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    border-radius: 0px;
+}
+
+.btn-square {
+    border-radius: 0px;
+    font-size: 12pt;
 }
 
 .footer-menu ul {
