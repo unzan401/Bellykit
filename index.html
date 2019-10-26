@@ -30,15 +30,15 @@
         }
 
         function checkCookie() {
-            // var user = getCookie("username");
-            // if (user != "") {
-            //     const A = document.getElementById("logintext");
-            //     A.InnerHtml = "登出";
-            //     A.href = "#logout";
-            // } else {
-            //     const A = document.getElementById("logintext");
-            //     console.log("hi");
-            // }
+            var user = getCookie("username");
+            if (user != "") {
+                const A = document.getElementById("logintext");
+                A.InnerHtml = "登出";
+                A.href = "#logout";
+            } else {
+                const A = document.getElementById("logintext");
+                console.log("hi");
+            }
         }
     </script>
 
