@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bellykit投資策略平台</title>
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            var user = getCookie("username");
+            if (user != "") {
+                alert("欢迎 " + user + " 再次访问");
+            } else {
+                user = prompt("请输入你的名字:", "");
+                if (user != "" && user != null) {
+                    setCookie("username", user, 30);
+                }
+            }
+        }
+    </script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+
+
+</head>
+
+
+<body onscroll=scrolldown() onload="checkCookie()">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="image/bellykitlogo.png" height="40px"><img src="image/bellykitlogo2.png" height="32px" style="margin-left:30px"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           策略
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                            <a class="dropdown-item" href="#">推薦策略</a>
+                            <a class="dropdown-item" href="#">人氣策略</a>
+                            <a class="dropdown-item" href="#">波段策略</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">方案</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <!-- <div class="container-fiuld" style="margin-top:-150px">
+            <div class=" row justify-content-center" style="background-image:url(index-1.jpg);height:1050px ;">
+                <div style="background-color:rgba(222,245,234,0.5);height:250px;width:375px;margin-top:80px ;">
+                    <h4 style="margin: 20px"><img src="image/mylogo-01.png" width="60px" height="60px" alt="logo">Bellykit投資策略平台</h4>
+                    <h2>把握每個吃肉的瞬間！</h2>
+                    <button style="margin: 20px;" id="註冊1">立刻加入！</button>
+                </div>
+            </div>
+        </div>
+        英雄榜 -->
+
+        <div class="container-fiuld" style="background-color:#EEEEEE;">
+            <div class=row style="min-height: 350px;;position: relative;">
+                <img src="image/index0.png" alt="" style="min-width: 300px;width:65%;position: absolute;right:0">
+                <img src="image/text.png" alt="" style="min-width:280px;width:35%;position:absolute;left:23%;top: 30vmin;">
+                <img src="image/item0.png" alt="" style="margin-top:50vmin;min-width:230px;min-height:138px;height:15vw;width:24.4vw ;">
+            </div>
+            <h2 class="index-text">♔最受歡迎的優秀策略</h2>
+            <div class="row justify-content-center">
+                <div style="width:1110px">
+                    <div class="col-lg-12 d-none d-lg-block" style="height:350px;padding: 0;">
+                        <div id="carouselIndicators1" class="carousel slide" data-ride="carousel">
+                            <!--下方導覽桿 <ol class="carousel-indicators">
+                                <li data-target="#carouselIndicators1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselIndicators1" data-slide-to="1"></li>
+                                <li data-target="#carouselIndicators1" data-slide-to="2"></li>
+                            </ol> -->
+                            <div class="carousel-inner" role="listbox">
+                                <!-- Slide One - Set the background image for this slide in the line below -->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselIndicators1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselIndicators1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="width:740px;">
+                    <div class="col-md-12 d-none d-md-block d-lg-none" style="height:350px;padding: 0;">
+                        <div id="carouselIndicators2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselIndicators2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselIndicators2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="width:370px;">
+                    <div class="col-sm-12 d-sm-block d-md-none" style="height:350px;padding: 0;">
+                        <div id="carouselIndicators3" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide Two - Set the background image for this slide in the line below -->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slide Three - Set the background image for this slide in the line below -->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="strategy">
+                                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                    </img>
+                                                </div>
+                                                <div class="strategy-name">
+                                                    <h4>嘎瑪糧食大戶指標策略</h4>
+                                                    <h5>#小資#大戶指標#長期</h5>
+                                                    <h5>劉重慶</h5>
+                                                </div>
+                                                <!-- 分隔線 -->
+                                                <div style="position:absolute;top: 130px;width:100%;height:1px; background:#BBBBBB;"></div>
+                                                <div class="strategy-number">
+                                                    <h2 style="color:#f8777d">+87.9%</h2>
+                                                </div>
+                                                <div class="strategy-max">最大回檔：10%</div>
+                                                <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-info" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-follow" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square" type="button" id="strategy-subscribe" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselIndicators3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselIndicators3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- Page Content -->
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color:#0d1b46 ;">
+        <div class="container">
+            <div class="row footer-menu justify-content-center">
+                <ul>
+                    <li> <a href="#" title="關於Bellykit">關於Bellykit</a> </li>
+                    <li> <a href="#" title="法律聲明">法律聲明</a> </li>
+                    <li> <a href="#" title="服務條款">服務條款</a> </li>
+                    <li> <a href="#" title="聯絡Bellykit">聯絡Bellykit</a> </li>
+                </ul>
+            </div>
+
+            <p class="m-0 text-center text-white">Copyright &copy; 倍利金融科技公司 Since 2019</p>
+            <p class="text-center text-white" style="font-size:0.8rem">本系統為雲端化的策略開發平台，所有策略由用戶自行開發與使用，不做任何投資理財建議，請投資者謹慎使用。</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const win = document.defaultView;
+        var nav_status = document.getElementsByClassName("navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top")[0];
+
+        function scrolldown() {
+            var scroll_down = document.documentElement.scrollTop;
+            if (scroll_down > 90) {
+                nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-light fixed-top";
+            } else {
+                nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top";
+            }
+        }
+
+        window.addEventListener("scroll", scrolldown());
+    </script>
+
+</body>
+
+</html>
