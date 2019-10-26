@@ -33,15 +33,6 @@
             setCookie(name, "", -1);
         }
 
-        function logout() {
-            let A = document.getElementById("logintext")
-            eraseCookie("username");
-            setTimeout(50);
-            console.log("hi");
-            A.innerText = "登入";
-            A.href = "#login";
-            A.removeEventListener("click", logout());
-        }
 
         function checkCookie() {
             var user = getCookie("username");
@@ -50,7 +41,9 @@
                 let A = document.getElementById("logintext");
                 A.innerText = "登出";
                 A.href = "#logout";
-                A.addEventListener("click", logout());
+                A.onclick = () => {
+                    console.log("HI!");
+                };
             } else {
                 user = prompt("请输入你的名字:", "");
                 if (user != "" && user != null) {
