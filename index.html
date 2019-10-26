@@ -36,8 +36,10 @@
                 A.InnerHtml = "登出";
                 A.href = "#logout";
             } else {
-                const A = document.getElementById("logintext");
-                console.log("hi");
+                user = prompt("请输入你的名字:", "");
+                if (user != "" && user != null) {
+                    setCookie("username", user, 30);
+                }
             }
         }
     </script>
