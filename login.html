@@ -34,6 +34,7 @@
         }
 
 
+
         function checkCookie() {
             var user = getCookie("username");
             if (user != "") {
@@ -42,7 +43,10 @@
                 A.innerText = "登出";
                 A.href = "#logout";
                 A.onclick = () => {
-                    console.log("HI!");
+                    eraseCookie(name);
+                    A.innerText = "登入";
+                    A.href = "#login";
+                    A.onclick = null;
                 };
             } else {
                 user = prompt("请输入你的名字:", "");
