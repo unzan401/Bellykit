@@ -29,6 +29,10 @@
             return "";
         }
 
+        function eraseCookie(name) {
+            setCookie(name, "", -1);
+        }
+
         function checkCookie() {
             var user = getCookie("username");
             if (user != "") {
@@ -94,7 +98,7 @@
                         <a class="nav-link" href="#">常見問題</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="logintext" href="#">登入</a>
+                        <a class="nav-link" href="#" id="logintext">登入</a>
                     </li>
                 </ul>
             </div>
