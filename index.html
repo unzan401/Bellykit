@@ -33,7 +33,7 @@
             var user = getCookie("username");
             if (user != "") {
                 const A = document.getElementById("logintext");
-                A.InnerHtml = "登出";
+                A.innerText = "登出";
                 A.href = "#logout";
             } else {
                 user = prompt("请输入你的名字:", "");
