@@ -48,18 +48,18 @@
                     A.href = "#login";
                     A.onclick = null;
                 };
-            } else {
-
             }
         }
 
         function login() {
             const email = document.getElementById("loginemail");
             const password = document.getElementById("loginpassword");
-            if (email === "test@bellykit.com" && password === "123") {
+
+            if (email.value === "test@bellykit.com" && password.value === "123") {
                 const user = "測試人";
                 setCookie("username", user, 30);
                 checkCookie();
+
             }
         }
     </script>
