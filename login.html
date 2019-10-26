@@ -33,6 +33,16 @@
             var user = getCookie("username");
             if (user != "") {
                 alert("欢迎 " + user + " 再次访问");
+                const A = document.getElementById("logintext");
+                A.innerText = "登出";
+                A.href = "#logout";
+                A.addEventListener("click", () => {
+                    eraseCookie("username");
+                    setTimeout(50);
+                    console.log("hi");
+                    A.innerText = "登入";
+                    A.href = "#login";
+                });
             } else {
                 user = prompt("请输入你的名字:", "");
                 if (user != "" && user != null) {
@@ -53,7 +63,7 @@
 
 
 <body onscroll=scrolldown() onload="checkCookie()">
-
+    <button onclick=checkCookie() style="margin:200px">按我測試</button>
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top">
         <div class="container">
