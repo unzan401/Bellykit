@@ -43,7 +43,7 @@
                 A.innerText = "登出";
                 A.href = "#logout";
                 A.onclick = () => {
-                    eraseCookie(name);
+                    eraseCookie("username");
                     A.innerText = "登入";
                     A.href = "#login";
                     A.onclick = null;
