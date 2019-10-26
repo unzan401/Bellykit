@@ -40,7 +40,10 @@
                 const A = document.getElementById("logintext");
                 A.innerText = "登出";
                 A.href = "#logout";
-                A.addEventListener("click", eraseCookie());
+                A.addEventListener("click", function() {
+                    eraseCookie("username");
+                    checkCookie();
+                })
             } else {
                 user = prompt("请输入你的名字:", "");
                 if (user != "" && user != null) {
