@@ -33,7 +33,7 @@
             var user = getCookie("username");
             if (user != "") {
                 alert("欢迎 " + user + " 再次访问");
-                const A = document.getElementById("logintext");
+                let A = document.getElementById("logintext");
                 A.innerText = "登出";
                 A.href = "#logout";
                 A.addEventListener("click", () => {
