@@ -10,48 +10,56 @@
 
     <title>Bellykit投資策略平台</title>
     <script>
-        function createCookie(name, value, days, path) {
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                var expires = "; expires=" + date.toGMTString();
-            } else var expires = "";
-            document.cookie = name + "=" + value + expires + "; path=/";
-        }
-        //讀取
-        function readCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-            }
-            return null;
-        }
-        //刪除
-        function eraseCookie(name) {
-            createCookie(name, "", -1);
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
         }
 
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function eraseCookie(name) {
+            setCookie(name, "", -1);
+        }
+
+
+
         function checkCookie() {
-            var user = readCookie("username");
+            var user = getCookie("username");
             if (user != "") {
-                const A = document.getElementById("logintext");
+                alert("歡迎 " + user + " 再次访问");
+                let A = document.getElementById("logintext");
                 A.innerText = "登出";
                 A.href = "#logout";
-                A.addEventListener("click", () => {
+                A.onclick = () => {
                     eraseCookie("username");
-                    setTimeout(50);
-                    console.log("hi");
                     A.innerText = "登入";
                     A.href = "#login";
-                });
+                    A.onclick = null;
+                };
             } else {
-                user = prompt("请输入你的名字:", "");
-                if (user != "" && user != null) {
-                    createCookie("username", user, 30);
-                }
+
+            }
+        }
+
+        function login() {
+            const email = document.getElementById("loginemail");
+            const password = document.getElementById("loginpassword");
+            if (email === "test@bellykit.com" && password === "123") {
+                const user = "測試人";
+                setCookie("username", user, 30);
+                checkCookie();
             }
         }
     </script>
@@ -79,7 +87,7 @@
             <div class="form-group">
                 <input type="email" placeholder="email" id="loginemail" class="form-control" style="margin:15px 0">
                 <input type="password" placeholder="密碼" id="loginpassword" class="form-control" style="margin:15px 0">
-                <button class="btn btn-success" type="submit" style="width:100%;margin:15px 0">登入</button>
+                <button class="btn btn-success" onclick=login() type="submit" style="width:100%;margin:15px 0">登入</button>
                 <a href="#">
                     <p style="text-align:right">忘記密碼？</p>
                 </a>
