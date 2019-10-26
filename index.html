@@ -88,8 +88,11 @@
                 <input type="email" placeholder="email" id="loginemail" class="form-control" style="margin:15px 0">
                 <input type="password" placeholder="密碼" id="loginpassword" class="form-control" style="margin:15px 0">
                 <button class="btn btn-success" onclick=login() type="submit" style="width:100%;margin:15px 0">登入</button>
+                <a href="index.html#register">
+                    <p style="text-align:right">即刻註冊</p>
+                </a>
                 <a href="#">
-                    <p style="text-align:right">忘記密碼？</p>
+                    <p style="text-align:right">忘記密碼</p>
                 </a>
                 <div style="width:100%;height:1px; background:#BBBBBB;"></div>
                 <p class="index-test text-center" style="margin-top:-15px;background-color: #FFFFFF;">或是</p>
@@ -106,19 +109,12 @@
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="image/bellykitlogo.png" height="40px"><img src="image/bellykitlogo2.png" height="32px" style="margin-left:30px"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                 <span class="navbar-toggler-icon"></span>
+             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           策略
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                            <a class="dropdown-item" href="#">推薦策略</a>
-                            <a class="dropdown-item" href="#">人氣策略</a>
-                            <a class="dropdown-item" href="#">波段策略</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">策略</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">方案</a>
@@ -951,10 +947,10 @@
     </div>
 
     <div class="container-fiuld bg-white" style="margin-top:-10px">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="margin-bottom:100px ;">
             <img src="image/item7.png" alt="Bigface" style="height: 20vw;width: 43vw;min-height:140px; min-width: 300px;">
         </div>
-        <h1 class="index-text" style="margin:100px 0 30px 0">即刻加入我們！把握每個吃肉的瞬間！</h1>
+        <h1 class="index-text" id="register" style="margin:0 0 30px 0">即刻加入我們！把握每個吃肉的瞬間！</h1>
         <h4 class="index-text">Belly out your pocket!</h4>
         <div class="container" style="margin-top:30px">
             <div class="row align-items-center">
@@ -1000,14 +996,9 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         $(function() {
-            if ($(window).width() < 480) { //當視窗小於480時才運作
-                $('.navbar a').on('click', function() {
-                    $('.navbar-toggler').click();
-                });
-                $('.navbar nav-link').on('click', function() {
-                    $('navbar-collapse collapse show').class = "navbar-collapse collapse";
-                });
-            }
+            $('.navbar a').on('click', function() {
+                $('.navbar-toggler').click();
+            });
         });
     </script>
     <script>
