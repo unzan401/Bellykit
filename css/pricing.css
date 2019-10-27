@@ -1,0 +1,55 @@
+@media (max-width: 640px) {
+    .hterm {
+        display: none;
+    }
+    .hterm-hidden {
+        display: table-cell;
+    }
+    html {
+        font-size: 12pt;
+    }
+}
+
+@media (min-width:641px) {
+    .hterm {
+        display: table-cell;
+    }
+    .hterm-hidden {
+        display: none;
+    }
+    html {
+        font-size: 16pt;
+    }
+}
+
+.term1,
+.term2,
+.term3,
+.hterm-hidden {
+    text-align: center;
+    font-weight: 500;
+}
+
+.table .hterm-hidden {
+    padding: 1px;
+    font-size: 10pt;
+}
+
+.table thead {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.table thead .choose {
+    border-block-end-width: 5px;
+}
+
+.choose {
+    color: #F8777d;
+}
+
+.table thead .term1:hover,
+.table thead .term2:hover,
+.table thead .term3:hover {
+    background-color: #EEEEEE;
+}

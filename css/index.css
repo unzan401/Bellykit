@@ -22,14 +22,14 @@
     }
 }
 
-@media (max-width: 9999px) {
+@media (min-width:641px) {
     html {
         font-size: 14pt;
     }
 }
 
 body {
-    /* padding-top: 62px; */
+    padding-top: 80px;
     font-family: -apple-system, BlinkMacSystemFont, "cwTeXYen", "Microsoft JhengHei", "微軟正黑", "Times New Roman", "Sans-Serif", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     overflow-y: scroll;
     overflow-x: hidden;
