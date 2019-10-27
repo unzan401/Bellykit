@@ -22,6 +22,12 @@
     }
 }
 
+@media (max-width: 9999px) {
+    html {
+        font-size: 14pt;
+    }
+}
+
 body {
     /* padding-top: 62px; */
     font-family: -apple-system, BlinkMacSystemFont, "cwTeXYen", "Microsoft JhengHei", "微軟正黑", "Times New Roman", "Sans-Serif", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -197,12 +203,44 @@ body {
 
 .strategy-name h5 {
     font-size: 12pt;
+    margin: 0 10px 0 0;
+}
+
+.strategy-name h6 {
+    font-size: 10pt;
+    margin: 0 5px 0 0;
+}
+
+.strategy-name .strategy-star {
+    margin-top: 12px;
 }
 
 .strategy-number {
     position: absolute;
     top: 150px;
     left: 20px;
+}
+
+.star {
+    background-image: url("../image/star.png");
+    width: 11px;
+    height: 11px;
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+}
+
+.half-star {
+    background-image: url("../image/halfstar.png");
+    width: 11px;
+    height: 11px;
+    background-size: 11px 11px;
+}
+
+.empty-star {
+    background-image: url("../image/emptystar.png");
+    width: 11px;
+    height: 11px;
+    background-size: 11px 11px;
 }
 
 .strategy-number h2 {
