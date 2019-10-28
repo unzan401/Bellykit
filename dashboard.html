@@ -69,6 +69,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
 
 
 </head>
@@ -108,28 +109,19 @@
     </div>
     <!-- 登入頁面end -->
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar-searchbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="image/bellykitlogo.png" height="40px"><img src="image/bellykitlogo2.png" height="32px" style="margin-left:30px"></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="index.html"><img src="image/bellykitlogo.png" height="40px"><img src="image/bellykitlogo2.png" height="32px" style="margin-left:20px"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #FFFFFF;">
+                 <span class="navbar-toggler-icon" style="background-image:url(./image/search.png);"></span>
              </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">策略</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">方案</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">關於</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">常見問題</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="logintext" href="#login">登入</a>
+                        <div class="row align-item-center">
+                            <input type="text" maxlength="15" placeholder=" 搜尋策略或關鍵字" id="searchbar" style="padding: 5px;width:100%;min-width: 300px;;border-radius: 10px;height: 38px;"><button class="btn" type="submit" id="searchbtn" style="height:35px;width:35px;margin:1px 0 0 -35px;"><img src="image/search.png" alt="search" style="height:25px;width:25px;margin:-5px 0 0 -15px;"></button>
+
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -137,99 +129,47 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
-        <h1 class="mt-4 mb-3">404
-            <small>Page Not Found</small>
-        </h1>
-
-        <div class="jumbotron">
-            <h1 class="display-1">404</h1>
-            <p class="index-text" style="text-align: left;">找不到頁面，您也許是想前往下列網頁：</p>
-            <ul>
-                <li>
-                    <a href="index.html">首頁</a>
-                </li>
-                <li>
-                    <a href="pricing.html">方案</a>
-                </li>
-                <li>
-                    <a href="about.html">關於</a>
-                </li>
-                <li>
-                    <a href="faq.html">常見問題</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.jumbotron -->
-
-    </div>
-
-    <!-- Footer -->
-    <footer class="py-5" style="background-color:#0d1b46 ;">
-        <div class="container">
-            <div class="row footer-menu justify-content-center">
-                <ul>
-                    <li> <a href="#" title="關於Bellykit">關於Bellykit</a> </li>
-                    <li> <a href="#" title="法律聲明">法律聲明</a> </li>
-                    <li> <a href="tos.html" title="服務條款">服務條款</a> </li>
-                    <li> <a href="#" title="聯絡Bellykit">聯絡Bellykit</a> </li>
-                    <li> <a href="#" title="Facebook">Facebook</a> </li>
-                </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- sidebar -->
+            <div class="col-2 sidebar">
+                <div class="row userinfo"></div>
+                <div class="row sidebar1"><img src="image/dashbroad/icon1.png" alt="" style="height: auto;width: 20px;margin-left:-20px;">
+                    <p class="sidebartextb">五花市場</p>
+                </div>
+                <div class="row sidebar11 active">
+                    <img src="image/dashbroad/icon1-1.png" alt="" style="height: auto;width: 20px;margin-left:-20px;">
+                    <p class="sidebartexts">5A策略榜</p>
+                </div>
+                <div class="row sidebar12"><img src="image/dashbroad/icon1-2.png" alt="" style="height: auto;width: 20px;margin-left:-20px;">
+                    <p class="sidebartexts">期貨市況</p>
+                </div>
+                <div class="row sidebar13"><img src="image/dashbroad/icon1-3.png" alt="" style="height: auto;width: 20px;margin-left:-20px;">
+                    <p class="sidebartexts">貝莉幫幫你</p>
+                </div>
+                <div class="row sidebar2"><img src="image/dashbroad/icon2.png" alt="" style="height: auto;width: 15px;margin-left:-15px;">
+                    <p class="sidebartextb">我家冰箱</p>
+                </div>
+                <div class="row sidebar21"><img src="image/dashbroad/icon2-1.png" alt="" style="height: auto;width: 20px;margin-left:-20px;">
+                    <p class="sidebartexts">我的投資</p>
+                </div>
+                <div class="row sidebar22"><img src="image/dashbroad/icon2-2.png" alt="" style="height: auto;width: 20px;margin-left:-20px;">
+                    <p class="sidebartexts">我的關注</p>
+                </div>
+                <div class="row sidebar23"><img src="image/dashbroad/icon2-3.png" alt="" style="height: auto;width: 25px;margin-left:-25px;">
+                    <p class="sidebartexts">我的報表</p>
+                </div>
+                <div class="row sidebar24"><img src="image/dashbroad/icon2-4.png" alt="" style="height: auto;width: 20px;margin-left:-20px;">
+                    <p class="sidebartexts">個人資料</p>
+                </div>
             </div>
-
-            <p class="m-0 text-center text-white">Copyright &copy; 倍利金融科技公司 Since 2019</p>
-            <p class="text-center text-white" style="font-size:0.8rem">本系統為雲端化的策略開發平台，所有策略由用戶自行開發與使用，不做任何投資理財建議，請投資者謹慎使用。</p>
         </div>
-        </div>
-        <!-- /.container -->
-    </footer>
-
+    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- 以下動畫 -->
-    <script>
-        if ($(window).width() < 480) { //當視窗小於480時才運作
-            $(function() {
-                $('.navbar a').on('click', function() {
-                    $('.navbar-toggler').click();
-                });
-            })
-        };
-    </script>
 
-    <script>
-        const win = document.defaultView;
-        var nav_status = document.getElementsByClassName("navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top")[0];
-
-        function scrolldown() {
-            var scroll_down = document.documentElement.scrollTop;
-            if (scroll_down > 90) {
-                nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-light fixed-top";
-            } else {
-                nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top";
-            }
-        }
-
-        function bg2white() {
-            nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-light fixed-top";
-        }
-
-        window.addEventListener("scroll", scrolldown());
-        $(function() {
-            $('.navbar-toggler').on("click", function() {
-                bg2white();
-            })
-        })
-    </script>
-    <!-- 以上動畫 -->
 </body>
 
 </html>
-<!-- Page Content -->
-
-<!-- /.container -->
-
-<!-- Footer -->
