@@ -284,18 +284,26 @@
             });
         }
 
-        term1[0].addEventListener("click", () => {
-            choose(term1);
-            choice = 1;
-        });
-        term2[0].addEventListener("click", () => {
-            choose(term2);
-            choice = 2;
-        });
-        term3[0].addEventListener("click", () => {
-            choose(term3);
-            choice = 3;
-        });
+        term1.forEach(function(t) {
+            t.addEventListener("click", () => {
+                choose(term1);
+                choice = 1;
+            });
+        })
+
+        term2.forEach(function(t) {
+            t.addEventListener("click", () => {
+                choose(term2);
+                choice = 2;
+            });
+        })
+
+        term3.forEach(function(t) {
+            t.addEventListener("click", () => {
+                choose(term3);
+                choice = 3;
+            });
+        })
     </script>
     <!-- 以下動畫 -->
     <script>
