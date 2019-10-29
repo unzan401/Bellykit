@@ -38,6 +38,10 @@
     background-color: #f8777d;
 }
 
+.active p {
+    color: white;
+}
+
 .sidebar1,
 .sidebar2 {
     padding-left: 50px;

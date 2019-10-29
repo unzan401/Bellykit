@@ -12,19 +12,33 @@
 
 @media (max-width: 460px) {
     html {
-        font-size: 8pt;
+        font-size: 10pt;
     }
 }
 
 @media (max-width: 640px) {
     html {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 }
 
 @media (min-width:641px) {
     html {
-        font-size: 16pt;
+        font-size: 14pt;
+    }
+}
+
+.col.road {
+    background-image: url(../image/index-2.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 21.6vw;
+}
+
+@media (min-width:1920px) {
+    .col.road {
+        background-image: url(../image/index-2.png);
+        background-repeat: no-repeat;
+        background-size: 100vw 400px;
     }
 }
 
@@ -97,6 +111,10 @@ body {
     .popup {
         width: 70%;
     }
+}
+
+.nav-link {
+    font-size: 1.2rem;
 }
 
 .row {
