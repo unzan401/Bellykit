@@ -194,8 +194,7 @@ body {
 .strategy {
     position: relative;
     height: 270px;
-    width: 340px;
-    max-width: 100vw;
+    min-width: 340px;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 2px 2px #cccccc;
     padding: 20px 10px;
