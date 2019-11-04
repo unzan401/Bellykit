@@ -58,11 +58,14 @@ h6 {
 .sidebar11,
 .sidebar12,
 .sidebar13,
+.sidebar14,
+.sidebar15,
 .sidebar2,
 .sidebar21,
 .sidebar22,
 .sidebar23,
-.sidebar24 {
+.sidebar24,
+.sidebar25 {
     width: 100%;
     align-items: center;
 }
@@ -77,32 +80,36 @@ h6 {
 
 .sidebar1,
 .sidebar2 {
-    padding-left: 50px;
+    padding-left: 40px;
     height: 50px;
 }
 
 .sidebar11,
 .sidebar12,
 .sidebar13,
+.sidebar14,
+.sidebar15,
 .sidebar21,
 .sidebar22,
 .sidebar23,
-.sidebar24 {
-    padding-left: 70px;
-    height: 50px;
+.sidebar24,
+.sidebar25 {
+    padding-left: 50px;
+    height: 45px;
+    margin: 1px 0;
 }
 
 .sidebartextb,
 .sidebartexts {
     font-weight: 500;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 10px;
     display: flexbox;
     color: black;
     text-decoration-color: #cccccc;
 }
 
-.sidebartextb {
-    font-size: 0.8rem;
+.sidebartexts {
+    font-size: 1.25rem;
 }
 
 a:hover {
@@ -133,4 +140,12 @@ p {
 
 .strategy {
     width: 100%;
+}
+
+.subscribe {
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #65bcbf;
 }
