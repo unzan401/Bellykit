@@ -74,7 +74,7 @@ h6 {
     background-color: #f8777d;
 }
 
-.active p {
+.sidebar .active p {
     color: white;
 }
 
@@ -123,12 +123,14 @@ a:hover {
     background-color: #222222;
 }
 
-p {
-    margin: 0;
-}
-
 .maindesk {
     padding: 0;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    height: 150px;
+    width: 100%;
+    z-index: 89;
 }
 
 .strategybar {
@@ -136,6 +138,8 @@ p {
     width: 100%;
     height: 150px;
     align-items: center;
+    border-bottom-color: #EEEEEE;
+    border-bottom-style: solid;
 }
 
 .strategy {
@@ -148,4 +152,71 @@ p {
     height: 90px;
     width: 100%;
     background-color: #65bcbf;
+}
+
+.strategydetail {
+    background-color: #FFFFFF;
+    margin: 15px 0;
+}
+
+.checkitem {
+    margin: 5px 0;
+}
+
+.borderr {
+    border-right: solid;
+    border-right-color: #EEEEEE;
+    border-right-width: 1px;
+}
+
+.strategy-tag {
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #65BCBF;
+    border-radius: 5px;
+    color: #65BCBF;
+    padding: 1px 5px;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.sausage {
+    margin: 5px 0 10px 0;
+    align-items: center;
+}
+
+.sausage p {
+    margin: 0;
+}
+
+.timetag {
+    display: inline-block;
+    background-color: #65BCBF;
+    color: #FFFFFF;
+    padding: 1px 10px;
+    margin: 5px;
+}
+
+.timetag:active,
+.timetag.active {
+    display: inline-block;
+    background-color: #DEE5EF;
+    color: #FFFFFF;
+    padding: 1px 10px;
+    margin: 5px;
+}
+
+.strategydetail {
+    height: 0px;
+    -webkit-transition-property: height;
+    -webkit-transition-duration: 5s;
+    display: none;
+}
+
+.strategydetail.active {
+    -webkit-transition-property: height;
+    -webkit-transition-duration: 5s;
+    height: auto;
+    display: inherit;
 }
