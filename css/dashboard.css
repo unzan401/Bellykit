@@ -228,3 +228,11 @@ a:hover {
     height: auto;
     display: inherit;
 }
+
+.detailtag {
+    display: none;
+}
+
+.detailtag.active {
+    display: inherit;
+}
