@@ -58,7 +58,7 @@
             if (email.value === "test@bellykit.com" && password.value === "123") {
                 const user = "劉重慶";
                 setCookie("username", user, 30);
-                document.location.href = "dashboard.html";
+                document.location = "dashboard.html";
                 checkCookie();
             }
         }
