@@ -249,8 +249,8 @@ body {
     background-size: 11px 11px;
 }
 
-.empxy-star {
-    background-image: url("../image/empxystar.png");
+.empty-star {
+    background-image: url("../image/emptystar.png");
     width: 11px;
     height: 11px;
     background-size: 11px 11px;
