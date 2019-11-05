@@ -11,6 +11,18 @@ h6 {
     color: #f8777d;
 }
 
+.strategy {
+    box-shadow: 0 0 0 0;
+}
+
+.btn-outline-secondary.active {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    color: black!important;
+    background-color: #FFFFFF!important;
+    border-color: #BBBBBB!important;
+}
+
 .growup {
     background-image: url("../image/dashbroad/growup.png");
     background-size: 28px 28px;
@@ -172,7 +184,7 @@ a:hover {
 .strategy-tag {
     display: inline-block;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1.5px;
     border-color: #65BCBF;
     border-radius: 5px;
     color: #65BCBF;
@@ -209,14 +221,10 @@ a:hover {
 
 .strategydetail {
     height: 0px;
-    -webkit-transition-property: height;
-    -webkit-transition-duration: 5s;
     display: none;
 }
 
 .strategydetail.active {
-    -webkit-transition-property: height;
-    -webkit-transition-duration: 5s;
     height: auto;
     display: inherit;
 }

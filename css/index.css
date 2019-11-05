@@ -198,6 +198,9 @@ body {
     background-color: #FFFFFF;
     box-shadow: 2px 2px 2px 2px #cccccc;
     padding: 20px 10px;
+    /* border: #BBBBBB;
+    border-width: 1px;
+    border-style: solid; */
 }
 
 .strategy-photo {
@@ -212,7 +215,7 @@ body {
 }
 
 .strategy-name h4 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .strategy-name h5 {
