@@ -12,19 +12,19 @@
 
 @media (max-width: 460px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 640px) {
     html {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
-@media (min-width:641px) {
+@media (min-width: 641px) {
     html {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -297,4 +297,16 @@ body {
     font-style: initial;
     text-align: center;
     font-weight: 300;
+}
+
+.borderr {
+    border-right: solid;
+    border-right-color: #EEEEEE;
+    border-right-width: 1px;
+}
+
+.borderb {
+    border-bottom-style: solid;
+    border-bottom-color: #EEEEEE;
+    border-bottom-width: 1px;
 }

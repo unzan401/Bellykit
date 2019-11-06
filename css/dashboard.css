@@ -175,12 +175,6 @@ a:hover {
     margin: 5px 0;
 }
 
-.borderr {
-    border-right: solid;
-    border-right-color: #EEEEEE;
-    border-right-width: 1px;
-}
-
 .strategy-tag {
     display: inline-block;
     border-style: solid;
@@ -235,4 +229,36 @@ a:hover {
 
 .detailtag.active {
     display: inherit;
+}
+
+#morearrow:hover {
+    background-color: #EEEEEE;
+}
+
+.morestrategy {
+    position: absolute;
+    left: 5px;
+    top: 130px;
+    padding: 10px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: none;
+}
+
+.morestrategy.active {
+    position: absolute;
+    left: 5px;
+    top: 130px;
+    padding: 0 10px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: inherit;
+}
+
+.morestrategy .borderb {
+    margin: 20px 0;
+}
+
+.morestrategy .borderb:hover {
+    background-color: #FAFAFA;
 }

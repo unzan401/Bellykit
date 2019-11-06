@@ -50,7 +50,7 @@
                 };
             } else {
                 alert("請事先登入！");
-                document.location.href = "index.html#login";
+                // document.location.href = "index.html#login";
             }
         }
 
@@ -136,7 +136,7 @@
 
     <!-- Page Content -->
 
-    <div class="container-fluid" style="padding:0;    margin-top: -10px;">
+    <div class="container-fluid" style="padding:0;margin-top: -10px;">
         <div class="row">
             <!-- sidebar -->
             <div class="col-2 sidebar">
@@ -259,13 +259,26 @@
                                 <button class="btn btn-success btn-block" style="padding: 3px 6px;">我的關注</button></div>
 
                             <div class="col-10">
-                                <h4>嘎瑪糧食大戶指標策略</h4>
-
-
-                                <h5 class="font-red"><span class="growups"></span>120.9%</h5>
-
+                                <h5>嘎瑪糧食大戶指標策略</h5>
+                                <h6 class="font-red"><span class="growups"></span>120.9%</h6>
                                 <img src="image/dashbroad/graph2.png" alt="">
+                                <div class="text-center" id="morearrow" style="-webkit-user-select:none;-moz-user-select:none">▽</div>
+                                <div class="morestrategy">
+                                    <div class="borderb">
+                                        <h5>嘎瑪糧食大戶指標策略2</h5>
+                                        <h6 class="font-red"><span class="growups"></span>120.9%</h6>
+                                        <img src="image/dashbroad/graph2.png" alt=""></div>
+                                    <div class="borderb" style="margin:10px 0">
+                                        <h5>嘎瑪糧食大戶指標策略3</h5>
+                                        <h6 class="font-red"><span class="growups"></span>120.9%</h6>
+                                        <img src="image/dashbroad/graph2.png" alt=""></div>
+                                    <div class="borderb">
+                                        <h5>嘎瑪糧食大戶指標策略4</h5>
+                                        <h6 class="font-red"><span class="growups"></span>120.9%</h6>
+                                        <img src="image/dashbroad/graph2.png" alt=""></div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -1431,7 +1444,20 @@
             })
         })
     </script>
-
+    <script>
+        var more = document.getElementsByClassName("morestrategy")[0];
+        $("#morearrow").on("click", function() {
+            console.log("HI!");
+            if (more.className === "morestrategy") {
+                more.className += (" active");
+            } else {
+                more.className = "morestrategy";
+            }
+            setTimeout(function() {
+                more.className = "morestrategy";
+            }, 30000);
+        })
+    </script>
 </body>
 
 </html>

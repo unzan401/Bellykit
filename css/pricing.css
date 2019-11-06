@@ -5,9 +5,6 @@
     .hterm-hidden {
         display: table-cell;
     }
-    html {
-        font-size: 8pt;
-    }
 }
 
 @media (max-width: 640px) {
@@ -17,9 +14,6 @@
     .hterm-hidden {
         display: table-cell;
     }
-    html {
-        font-size: 10pt;
-    }
 }
 
 @media (min-width:641px) {
@@ -28,9 +22,6 @@
     }
     .hterm-hidden {
         display: none;
-    }
-    html {
-        font-size: 14pt;
     }
 }
 
