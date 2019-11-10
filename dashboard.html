@@ -65,6 +65,12 @@
                 document.location.href = "dashboard.html";
             }
         }
+
+        function logout() {
+            var user = getCookie("username");
+            eraseCookie("username");
+            document.location.href = "index.html#login";
+        }
     </script>
 
     <!-- Bootstrap core CSS -->
@@ -144,78 +150,86 @@
                     <span class="userphoto"></span>
                     <span class="username col">
                         <h4>劉重慶</h4>
-                        <div class="row regard"><img src="image/dashbroad/regard.png" alt="" style="margin:0 10px;height: 20px;width:20px"><p>嘩啦啦桶金</p>
+                        <div class="row regard"><img src="image/dashbroad/regard.png" alt="" style="margin:0 10px;height: 20px;width:20px"><p style="margin:0">嘩啦啦桶金</p>
+                            <div class="regard-detail"> <svg xmlns="http://www.w3.org/2000/svg" width="142" height="34.005" viewBox="0 0 142 34.005">
+                                <g id="mark" transform="translate(-183 -202.995)">
+                                  <rect id="圓角矩形_2" data-name="圓角矩形 2" width="142" height="24" rx="12" transform="translate(183 213)" fill="#0d1b46"/>
+                                  <path id="多邊形_2" data-name="多邊形 2" d="M218,222.969l-19.991.036,10.023-20.01Z" fill="#0d1b46"/>
+                                  <text id="收益超過一百萬" transform="translate(206 229.688)" fill="#fefefe" font-size="13.585" font-family="GenJyuuGothic-Regular, Gen Jyuu Gothic" letter-spacing="0.025em"><tspan x="0" y="0">收益超過一百萬</tspan></text>
+                                </g>
+                              </svg> </div>
+
                         </div>
                     </span>
                 </div>
                 <a href="#">
-                    <div class="row sidebar1">
+                    <div class="row sidebar1 siderbaritem">
                         <img src="image/dashbroad/icon1.png" alt="" style="height: 23px;width: 23px;">
                         <p class="sidebartextb">五花市場</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar11 active">
+                    <div class="row sidebar11 siderbaritem active">
                         <img src="image/dashbroad/icon1-1.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">5A股市策略榜</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar12">
+                    <div class="row sidebar12 siderbaritem">
                         <img src="image/dashbroad/icon1-2.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">大胃期貨策略榜</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar13">
+                    <div class="row sidebar13 siderbaritem">
                         <img src="image/dashbroad/icon1-3.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">期貨市況</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar14">
+                    <div class="row sidebar14 siderbaritem">
                         <img src="image/dashbroad/icon1-3.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">股肉市況</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar15">
+                    <div class="row sidebar15 siderbaritem">
                         <img src="image/dashbroad/icon1-3.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">貝莉幫幫你</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar2">
+                    <div class="row sidebar2 siderbaritem">
                         <img src="image/dashbroad/icon2.png" alt="" style="height: 23px;width: 23px">
                         <p class="sidebartextb">我家冰箱</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar21">
+                    <div class="row sidebar21 siderbaritem">
                         <img src="image/dashbroad/icon2-1.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">我的投資</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar22">
+                    <div class="row sidebar22 siderbaritem">
                         <img src="image/dashbroad/icon2-2.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">我的關注</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar23">
+                    <div class="row sidebar23 siderbaritem">
                         <img src="image/dashbroad/icon2-3.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">我的報表</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar24">
+                    <div class="row sidebar24 siderbaritem">
                         <img src="image/dashbroad/icon2-4.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">個人資料</p>
                     </div>
                 </a>
                 <a href="#">
-                    <div class="row sidebar25">
+                    <div class="row sidebar25 siderbaritem" onclick="logout()">
                         <img src="image/dashbroad/icon2-4.png" alt="" style="height: 37px;width: 37px;">
                         <p class="sidebartexts">登　　出</p>
                     </div>
@@ -262,13 +276,13 @@
                                 <h5>嘎瑪糧食大戶指標策略</h5>
                                 <h6 class="font-red"><span class="growups"></span>120.9%</h6>
                                 <img src="image/dashbroad/graph2.png" alt="">
-                                <div class="text-center" id="morearrow" style="-webkit-user-select:none;-moz-user-select:none">▽</div>
+                                <div class="text-center" id="morearrow" style="-webkit-user-select:none;-moz-user-select:none">▼</div>
                                 <div class="morestrategy">
                                     <div class="borderb">
                                         <h5>嘎瑪糧食大戶指標策略2</h5>
                                         <h6 class="font-red"><span class="growups"></span>120.9%</h6>
                                         <img src="image/dashbroad/graph2.png" alt=""></div>
-                                    <div class="borderb" style="margin:10px 0">
+                                    <div class="borderb">
                                         <h5>嘎瑪糧食大戶指標策略3</h5>
                                         <h6 class="font-red"><span class="growups"></span>120.9%</h6>
                                         <img src="image/dashbroad/graph2.png" alt=""></div>
@@ -551,9 +565,11 @@
                                         <text style="margin-left: 20px;">最大回檔區間</text>
                                         <text style="color: black;">2019.08.27 - 2019.09.01</text>
                                     </p>
-                                    <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
-                                    <div class="detailgraph" style="height:20px;width:20px;position: absolute;top:170px;left: 400px"></div>
-                                    <img class="detailtag" src="image/dashbroad/detailhover.png" alt="" style="height: 116px;width:112px;position: absolute;top:165px;left: 410px">
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
 
                                 </div>
                             </div>
@@ -640,9 +656,11 @@
                                         <text style="margin-left: 20px;">最大回檔區間</text>
                                         <text style="color: black;">2019.08.27 - 2019.09.01</text>
                                     </p>
-                                    <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
-                                    <div class="detailgraph" style="height:20px;width:20px;position: absolute;top:170px;left: 400px"></div>
-                                    <img class="detailtag" src="image/dashbroad/detailhover.png" alt="" style="height: 116px;width:112px;position: absolute;top:165px;left: 410px">
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
 
                                 </div>
                             </div>
@@ -729,9 +747,11 @@
                                         <text style="margin-left: 20px;">最大回檔區間</text>
                                         <text style="color: black;">2019.08.27 - 2019.09.01</text>
                                     </p>
-                                    <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
-                                    <div class="detailgraph" style="height:20px;width:20px;position: absolute;top:170px;left: 400px"></div>
-                                    <img class="detailtag" src="image/dashbroad/detailhover.png" alt="" style="height: 116px;width:112px;position: absolute;top:165px;left: 410px">
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
 
 
                                 </div>
@@ -819,9 +839,11 @@
                                         <text style="margin-left: 20px;">最大回檔區間</text>
                                         <text style="color: black;">2019.08.27 - 2019.09.01</text>
                                     </p>
-                                    <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
-                                    <div class="detailgraph" style="height:20px;width:20px;position: absolute;top:170px;left: 400px"></div>
-                                    <img class="detailtag" src="image/dashbroad/detailhover.png" alt="" style="height: 116px;width:112px;position: absolute;top:165px;left: 410px">
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
 
                                 </div>
                             </div>
@@ -1095,9 +1117,11 @@
                                         <text style="margin-left: 20px;">最大回檔區間</text>
                                         <text style="color: black;">2019.08.27 - 2019.09.01</text>
                                     </p>
-                                    <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
-                                    <div class="detailgraph" style="height:20px;width:20px;position: absolute;top:170px;left: 400px"></div>
-                                    <img class="detailtag" src="image/dashbroad/detailhover.png" alt="" style="height: 116px;width:112px;position: absolute;top:165px;left: 410px">
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
 
 
                                 </div>
@@ -1185,9 +1209,11 @@
                                         <text style="margin-left: 20px;">最大回檔區間</text>
                                         <text style="color: black;">2019.08.27 - 2019.09.01</text>
                                     </p>
-                                    <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
-                                    <div class="detailgraph" style="height:20px;width:20px;position: absolute;top:170px;left: 400px"></div>
-                                    <img class="detailtag" src="image/dashbroad/detailhover.png" alt="" style="height: 116px;width:112px;position: absolute;top:165px;left: 410px">
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
 
 
                                 </div>
@@ -1275,9 +1301,11 @@
                                         <text style="margin-left: 20px;">最大回檔區間</text>
                                         <text style="color: black;">2019.08.27 - 2019.09.01</text>
                                     </p>
-                                    <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
-                                    <div class="detailgraph" style="height:20px;width:20px;position: absolute;top:170px;left: 400px"></div>
-                                    <img class="detailtag" src="image/dashbroad/detailhover.png" alt="" style="height: 116px;width:112px;position: absolute;top:165px;left: 410px">
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
 
 
                                 </div>
@@ -1365,9 +1393,11 @@
                                         <text style="margin-left: 20px;">最大回檔區間</text>
                                         <text style="color: black;">2019.08.27 - 2019.09.01</text>
                                     </p>
-                                    <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
-                                    <div class="detailgraph" style="height:20px;width:20px;position: absolute;top:170px;left: 400px"></div>
-                                    <img class="detailtag" src="image/dashbroad/detailhover.png" alt="" style="height: 116px;width:112px;position: absolute;top:165px;left: 410px">
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
                                 </div>
                             </div>
                         </div>
@@ -1447,15 +1477,25 @@
     <script>
         var more = document.getElementsByClassName("morestrategy")[0];
         $("#morearrow").on("click", function() {
-            console.log("HI!");
             if (more.className === "morestrategy") {
                 more.className += (" active");
+                $("#morearrow").html("▲");
             } else {
                 more.className = "morestrategy";
+                $("#morearrow").html("▼");
             }
             setTimeout(function() {
                 more.className = "morestrategy";
+                $("#morearrow").html("▼");
             }, 30000);
+        })
+    </script>
+    <script>
+        $(".regard").on("mouseover", function() {
+            $(".regard-detail").attr("class", "regard-detail active");
+        })
+        $(".regard").on("mouseout", function() {
+            $(".regard-detail").attr("class", "regard-detail");
         })
     </script>
 </body>

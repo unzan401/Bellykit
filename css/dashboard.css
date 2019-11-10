@@ -82,11 +82,11 @@ h6 {
     align-items: center;
 }
 
-.sidebar .active {
+.siderbaritem.active {
     background-color: #f8777d;
 }
 
-.sidebar .active p {
+.siderbaritem.active p {
     color: white;
 }
 
@@ -229,6 +229,11 @@ a:hover {
 
 .detailtag.active {
     display: inherit;
+    height: 116px;
+    width: 112px;
+    position: absolute;
+    top: 40%;
+    left: 59%;
 }
 
 #morearrow:hover {
@@ -241,7 +246,6 @@ a:hover {
     top: 130px;
     padding: 10px;
     width: 100%;
-    background-color: #FFFFFF;
     display: none;
 }
 
@@ -249,16 +253,29 @@ a:hover {
     position: absolute;
     left: 5px;
     top: 130px;
-    padding: 0 10px;
+    padding: 0;
     width: 100%;
-    background-color: #FFFFFF;
     display: inherit;
+    background-color: #EEEEEE;
 }
 
 .morestrategy .borderb {
-    margin: 20px 0;
+    margin: 0 0 7px 0;
+    padding: 10px;
+    background-color: #FFFFFF;
 }
 
 .morestrategy .borderb:hover {
     background-color: #FAFAFA;
+}
+
+.regard-detail {
+    display: none;
+}
+
+.regard-detail.active {
+    display: inherit;
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
