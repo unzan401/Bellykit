@@ -185,10 +185,11 @@ a:hover {
     padding: 1px 5px;
     margin: 5px 0;
     font-weight: 600;
+    background-color: #FFFFFF;
 }
 
 .sausage {
-    margin: 5px 0 10px 0;
+    margin: 5px 0 5px 0;
     align-items: center;
 }
 
@@ -278,4 +279,30 @@ a:hover {
     position: absolute;
     top: 50px;
     left: 50px;
+}
+
+.strategybox {
+    background-color: #FFFFFF;
+    padding: 10px 15px;
+}
+
+.strategytable thead,
+.strategytable tr {
+    height: 50px;
+    border-bottom-style: solid;
+    border-bottom-color: #EEEEEE;
+    border-bottom-width: 1px;
+}
+
+.strategytable td {
+    min-width: 4rem;
+}
+
+.strategytable {
+    text-align: center;
+}
+
+.strategytable .tl {
+    text-align: left;
+    color: #A1B0C6;
 }
