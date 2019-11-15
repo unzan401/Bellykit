@@ -310,3 +310,10 @@ body {
     border-bottom-color: #EEEEEE;
     border-bottom-width: 1px;
 }
+
+.userphoto-s {
+    width: 45px;
+    height: 45px;
+    background-color: #EEEEEE;
+    margin: 10px;
+}

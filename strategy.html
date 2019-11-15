@@ -50,7 +50,7 @@
                 };
             } else {
                 alert("請事先登入！");
-                // document.location.href = "index.html#login";
+                // document.location.href ="index.html#login";
             }
         }
 
@@ -145,7 +145,7 @@
     <div class="container-fluid" style="padding:0;margin-top: -10px;">
         <div class="row">
             <!-- sidebar -->
-            <div class="col-2 sidebar">
+            <div class="col sidebar">
                 <div class="row userinfo">
                     <span class="userphoto"></span>
                     <span class="username col">
@@ -239,14 +239,14 @@
                     <button class="btn" id="subscribe" style="width: 250px;border-style: double;border-color:gray;border-width: 3px;"><h3 style="color:white">買單訂閱</h3></button></div>
 
             </div>
-            <div class="col-10 offset-2">
+            <div class="col" style="margin-left: 320px;">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" style="margin-top: 20px;">
                         <div class="col-xl-5 col-lg-6" style="margin:20px 0;">
                             <h2>咖馬糧食大戶指標策略1</h2>
-                            <div class="strategy-tag"># 小資</div>
-                            <div class="strategy-tag"># 大戶指標</div>
-                            <div class="strategy-tag"># 長期</div>
+                            <a href="#" class="strategy-tag"># 小資</a>
+                            <a href="#" class="strategy-tag"># 大戶指標</a>
+                            <a href="#" class="strategy-tag"># 長期</a>
                         </div>
                         <div class="col-xl-7 col-lg-6" style="margin:20px 0;">
                             <h6>累積報酬率</h6>
@@ -257,7 +257,7 @@
                         </div>
                         <div class="col-4" style="margin:20px 0;">
                             <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 10px;">策略認證</h5>
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">策略認證</h5>
                                 <div class="checkitem">
                                     <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
                                     <text>低風險，穩定成長</text>
@@ -278,7 +278,7 @@
                         </div>
                         <div class="col-4" style="margin:20px 0;">
                             <div class="strategybox  h-100">
-                                <h5 class="borderb" style="padding: 10px;">策略基本資料</h5>
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">策略基本資料</h5>
                                 <div class="row sausage">
                                     <img src="image/dashbroad/sausage.png" alt="" style="margin:8px;height:26px;width:26px">
                                     <p style="color:#A1B0C6;font-size:0.9rem;margin:0 10px">交易商品</p>
@@ -324,7 +324,7 @@
                         </div>
                         <div class="col-4 justify-content-space-between" style="flex-direction: column;display: flex;">
                             <div class="col strategybox" style="margin:20px 0;">
-                                <h5 class="borderb" style="padding: 10px;">策略簡介</h5>
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">策略簡介</h5>
                                 <p style="margin: 10px;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
                             </div>
                             <div class="row strategybox" style="margin:20px 0;">
@@ -332,12 +332,13 @@
                                 <div class="col justify-content-center" style="margin: 20px 0;padding: 0;">
                                     <div class="row align-items-center">
                                         <h4 style="display: inline;margin-right: 10px;">劉重慶</h4>
+                                        <span class="row align-items-center">
                                         <h6> 3.6 </h6>
                                         <div class="star"></div>
                                         <div class="star"></div>
                                         <div class="star"></div>
                                         <div class="half-star"></div>
-                                        <div class="empty-star"></div>
+                                        <div class="empty-star"></div></span>
                                     </div>
                                     <text style="color:#A1B0C6;margin-right: 15px;">加入時間</text><text>2018.08.30<br></text>
                                     <text style="color:#A1B0C6;margin-right: 15px;">貢獻策略</text><text>34則</text>
@@ -347,7 +348,7 @@
                         </div>
                         <div class="col-8" style="margin:20px 0">
                             <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 10px;">損益圖</h5>
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">損益圖</h5>
                                 <p style=" color:#A1B0C6;width:100%;text-align: end;right: 10px;"><button class="btn timetag">1月</button>
                                     <button class="btn timetag active" aria-pressed="true">3月</button>
                                     <button class="btn timetag">6月</button>
@@ -364,8 +365,8 @@
                         </div>
                         <div class="col-4" style="margin:20px 0">
                             <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 10px;">指標</h5>
-                                <table class="strategytable" style="width: 100%; ">
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">指標</h5>
+                                <table class="strategytable" style="width: 100%;">
                                     <thead>
                                         <th></th>
                                         <th>
@@ -405,6 +406,273 @@
                                 </table>
                             </div>
                         </div>
+                        <div class="col-8" style="margin:20px 0">
+                            <div class="strategybox h-100">
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">目前持股</h5>
+                                <table class="strategytable2">
+                                    <thead>
+                                        <th>日期時間</th>
+                                        <th>股票名稱</th>
+                                        <th>成交價</th>
+                                        <th>目前市價</th>
+                                        <th>損益</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2019/11/09</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                        <div class="col-4" style="margin:20px 0">
+                            <div class="strategybox h-100">
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">觀察名單</h5>
+                                <table class="strategytable2">
+                                    <thead>
+                                        <th>操作</th>
+                                        <th>股票名稱</th>
+                                        <th>操作時間</th>
+                                        <th>最新收盤價</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="color:#F8777D">買</td>
+                                            <td>2337旺宏</td>
+                                            <td>11/09</td>
+                                            <td>29.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#F8777D">買</td>
+                                            <td>2337旺宏</td>
+                                            <td>11/09</td>
+                                            <td>29.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#F8777D">買</td>
+                                            <td>2337旺宏</td>
+                                            <td>11/09</td>
+                                            <td>29.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#65BCBF">賣</td>
+                                            <td>2337旺宏</td>
+                                            <td>11/09</td>
+                                            <td>29.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#F8777D">買</td>
+                                            <td>2337旺宏</td>
+                                            <td>11/09</td>
+                                            <td>29.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#F8777D">買</td>
+                                            <td>2337旺宏</td>
+                                            <td>11/09</td>
+                                            <td>29.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#F8777D">買</td>
+                                            <td>2337旺宏</td>
+                                            <td>11/09</td>
+                                            <td>29.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color:#F8777D">買</td>
+                                            <td>2337旺宏</td>
+                                            <td>11/09</td>
+                                            <td>29.6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-8" style="margin:20px 0">
+                            <div class="strategybox h-100">
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">歷史交易明細</h5>
+                                <table class="strategytable2">
+                                    <thead>
+                                        <th>持股期間</th>
+                                        <th>股票名稱</th>
+                                        <th>買入價</th>
+                                        <th>賣出價</th>
+                                        <th>損益</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2019/11/09-2019/11/12</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09-2019/11/12</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09-2019/11/12</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09-2019/11/12</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09-2019/11/12</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09-2019/11/12</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09-2019/11/12</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2019/11/09-2019/11/12</td>
+                                            <td>2337旺宏</td>
+                                            <td>29.6</td>
+                                            <td>39.1</td>
+                                            <td style="color:#F8777D">▲32.09%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="col-4" style="margin:20px 0">
+                            <div class="strategybox h-100">
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">近期收益最高</h5>
+                                <div class="col" style="height:90%">
+                                    <div class="row align-items-center" style="height: 30%;">
+                                        <h5>2337 旺宏</h5>
+                                        <h3 style="margin-left: 10%;font-weight:600; color: #F8777D"><span class="growup"></span>32.1%</h3>
+                                    </div>
+                                    <p><text style="color:#A1B0C6 ;">持股期間<br></text>2019/11/09-2019/11/12</p>
+                                    <p><text style="color:#A1B0C6 ;">買入價-賣出價<br></text>29.6 - 39.1</p>
+                                    <img src="image/dashbroad/318X120_stairs-01.png" alt="" style="height:auto;width:100%;margin-top:-75px">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12" style="margin:20px 0">
+                            <div class="strategybox h-100">
+                                <h5 class="borderb" style="padding: 8px;margin-bottom: 8px;">評論</h5>
+                                <div class="col-12">
+                                    <div class="row align-items-center borderb" style="padding:20px 0;">
+                                        <span class="userphoto-s"></span>
+                                        <div class="col">
+                                            <h6 style="color:#0D1B46">劉重慶</h6>
+                                            <input type="text" class="form-control" id="message" placeholder="留下您的評論" style="margin-top: 5px;height: 1.5rem;;font-size: 0.8rem;">
+                                        </div>
+                                        <button class="btn btn-default btn-message">送出</button>
+                                    </div>
+                                    <div class="row align-items-center borderb" style="padding:10px 0;">
+                                        <span class="userphoto-s"></span>
+                                        <div class="col">
+                                            <h6 style="color:#0D1B46">陳開根<text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
+                                            <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 我相信你哦，最好不要讓我失望！</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center borderb" style="padding:10px 0;">
+                                        <span class="userphoto-s"></span>
+                                        <div class="col">
+                                            <h6 style="color:#0D1B46">大明<text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
+                                            <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 自從使用了這個策略後，我每次考試都一百分！</h6>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <span class="userphoto-s" style="margin-left: 70px;"></span>
+                                        <div class="col">
+                                            <h6 style="color:#0D1B46">劉重慶<text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
+                                            <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 我是不曉得為什麼你連留言都要抄就是了</h6>
+                                        </div>
+
+                                    </div>
+                                    <div class="row align-items-center borderb" style="padding:10px 0;">
+                                        <span class="userphoto-s"></span>
+                                        <div class="col">
+                                            <h6 style="color:#0D1B46">阿美<text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
+                                            <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 自從使用了這個策略後，我每次考試都一百分！</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -414,8 +682,8 @@
         </div>
     </div>
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js "></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
         $(window).on('load', function() {
             $('#loading').fadeOut(1000);
@@ -424,24 +692,24 @@
 
 
     <script>
-        $(".regard ").on("mouseover ", function() {
-            $(".regard-detail ").attr("class ", "regard-detail active ");
+        $(".regard").on("mouseover", function() {
+            $(".regard-detail").attr("class", "regard-detail active");
         })
-        $(".regard ").on("mouseout ", function() {
-            $(".regard-detail ").attr("class ", "regard-detail ");
+        $(".regard").on("mouseout", function() {
+            $(".regard-detail").attr("class", "regard-detail");
         })
     </script>
 
     <script>
-        const detailgraph = Array.from(document.getElementsByClassName("detailgraph "));
-        const detailtag = Array.from(document.getElementsByClassName("detailtag "));
+        const detailgraph = Array.from(document.getElementsByClassName("detailgraph"));
+        const detailtag = Array.from(document.getElementsByClassName("detailtag"));
 
         function show(detailtag) {
-            detailtag.className += " active ";
+            detailtag.className += " active";
         }
 
         function showoff(detailtag) {
-            detailtag.className = "detailtag "
+            detailtag.className = "detailtag"
         }
 
         detailgraph.forEach(function(t) {

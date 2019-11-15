@@ -54,7 +54,7 @@ h6 {
     left: 0;
     top: 70px;
     height: calc(100% - 70px);
-    width: 100%;
+    width: 320px;
     box-shadow: 3px 3px 3px 3px #cccccc;
     z-index: 90;
 }
@@ -305,4 +305,38 @@ a:hover {
 .strategytable .tl {
     text-align: left;
     color: #A1B0C6;
+}
+
+.strategytable2 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.strategytable2 thead {
+    color: #A1B0C6;
+}
+
+.strategytable2 tr,
+.strategytable2 thead {
+    height: 35px;
+}
+
+table.strategytable2 tr:nth-child(even) {
+    background-color: #F9FAFB;
+}
+
+
+/* table.strategytable2 tr:nth-child(odd) {
+
+} */
+
+.btn-message {
+    margin: 10px;
+    background-color: #F8777D;
+}
+
+.btn-message:hover {
+    background-color: #bb4b50;
+    color: #FFFFFF;
 }
