@@ -10,19 +10,25 @@
     border-color: #DDDDDD;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
     html {
         font-size: 14px;
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 992px) {
     html {
         font-size: 16px;
     }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 992px) {
     html {
         font-size: 18px;
     }
@@ -194,10 +200,12 @@ body {
 .strategy {
     position: relative;
     height: 270px;
-    min-width: 340px;
+    width: 330px;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 2px 2px #cccccc;
     padding: 20px 10px;
+    margin: auto;
+    margin: 0 10px
     /* border: #BBBBBB;
     border-width: 1px;
     border-style: solid; */
@@ -231,8 +239,6 @@ body {
 .strategy-name .strategy-star {
     margin-top: 12px;
 }
-
-.strategy-number {}
 
 .star {
     background-image: url("../image/star.png");

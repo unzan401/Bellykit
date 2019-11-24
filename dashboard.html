@@ -121,33 +121,21 @@
     </div>
     <!-- 登入頁面end -->
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar-searchbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="image/bellykitlogo.png" height="40px"><img src="image/bellykitlogo2.png" height="32px" style="margin-left:20px"></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #FFFFFF;">
-                 <span class="navbar-toggler-icon" style="background-image:url(./image/search.png);"></span>
-             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <div class="row">
-                            <input type="text" maxlength="15" placeholder=" 搜尋策略或關鍵字" id="searchbar" style="padding: 5px;width:100%;min-width: 300px;;border-radius: 10px;"><button class="btn" type="submit" id="searchbtn" style="height:35px;width:35px;margin:1px 0 0 -35px;"><img src="image/search.png" alt="search" style="height:25px;width:25px;margin:-5px 0 0 -15px;"></button>
+    <div class="row align-items-center fixed-top navbar-searchbar navbar-light" style="padding-left: 20px;">
+        <button class="navbar-toggler" type="button" id="sidebarbtn">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="d-none navbar-brand d-sm-block" href="index.html" style="margin:0 20px"><img src="image/bellykitlogo.png" height="40px"><img src="image/bellykitlogo2.png" height="32px" style="margin-left:20px"></a>
+        <input type="text" maxlength="15" placeholder=" 搜尋策略或關鍵字" id="searchbar" style="padding: 5px;height: 40px;min-width: 260px;border-radius: 10px;"><button class="btn" type="submit" id="searchbtn" style="height:35px;width:35px;margin:1px 0 0 -35px;"><img src="image/search.png" alt="search" style="height:25px;width:25px;margin:-5px 0 0 -15px;"></button>
 
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    </div>
     <!-- Page Content -->
 
     <div class="container-fluid" style="padding:0;margin-top: -10px;">
         <div class="row">
             <!-- sidebar -->
-            <div class="col-2 sidebar">
-                <div class="row userinfo">
-                    <span class="userphoto"></span>
+            <div class="sidebar">
+                <div class="row userinfo"> <span class="userphoto"></span>
                     <span class="username col">
                         <h4>劉重慶</h4>
                         <div class="row regard"><img src="image/dashbroad/regard.png" alt="" style="margin:0 10px;height: 20px;width:20px"><p style="margin:0">嘩啦啦桶金</p>
@@ -239,11 +227,12 @@
                     <button class="btn" id="subscribe" style="width: 250px;border-style: double;border-color:gray;border-width: 3px;"><h3 style="color:white">買單訂閱</h3></button></div>
 
             </div>
-            <div class="col-10 offset-2 maindesk">
-                <div class="row strategybar justify-content-end" style="padding: 0 71px;">
-                    <div class="col-1">
-                        <img src="image/dashbroad/eatmeat.png" alt="" style="height: 99px;"></div>
-                    <div class="col-2">
+            <div class="maindesk content">
+                <div class="row strategybar justify-content-end wchange" style="margin-right: auto;margin-left: auto;">
+                    <div class="col-xl-2 col-md-3 col-sm-6 col-6 d-lg-none d-xl-block" id="chick" style="max-width:120px">
+                        <img src="image/dashbroad/eatmeat.png" alt="" style="height: 99px;">
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-6" style="min-width:200px">
                         <div class="row justify-content-end">
                             <h5>總報酬率</h5>
                             <div class="w-100"></div>
@@ -255,41 +244,35 @@
                                 <h3 class="font-red">+87,509</h4>
                         </div>
                     </div>
-
-
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-10">
-                                <img src="image/dashbroad/graph1.png" alt="" style="max-height:130px;width: 100%;"></div>
-
+                    <div class="col-xl-5 col-lg-5 col-md-6 d-none d-md-block">
+                        <div class="row align-items-center">
+                            <img src="image/dashbroad/graph1.png" alt="" style="max-height:130px;width: 100%;">
                         </div>
                     </div>
-
-
-                    <div class="col-3" style="border-left-color: #EEEEEE;border-left-width: 1px;border-left-style: solid;">
+                    <div class="col-xl-3 col-lg-4 d-none d-lg-block" id="mores" style="border-left-color: #EEEEEE;border-left-width: 1px;border-left-style: solid;min-width: 340px;">
                         <div class="row align-items-center barstrategy">
-                            <div class="col-2 align-items-center" style="margin:0px;padding: 0;">
+                            <div style="width:50px;margin:5px;padding: 0;">
                                 <button class="btn btn-secondary btn-block" style="padding: 3px 6px;">我的投資</text></button>
                                 <button class="btn btn-success btn-block" style="padding: 3px 6px;">我的關注</button></div>
 
-                            <div class="col-10">
+                            <div>
                                 <h5>嘎瑪糧食大戶指標策略</h5>
                                 <h6 class="font-red"><span class="growups"></span>120.9%</h6>
-                                <img src="image/dashbroad/graph2.png" alt="">
+                                <img src="image/dashbroad/graph2.png" alt="" style="width: 240px;">
                                 <div class="text-center" id="morearrow" style="-webkit-user-select:none;-moz-user-select:none">▼</div>
                                 <div class="morestrategy">
                                     <div class="borderb">
                                         <h5>嘎瑪糧食大戶指標策略2</h5>
                                         <h6 class="font-red"><span class="growups"></span>120.9%</h6>
-                                        <img src="image/dashbroad/graph2.png" alt=""></div>
+                                        <img src="image/dashbroad/graph2.png" alt="" style="width: 240px;"></div>
                                     <div class="borderb">
                                         <h5>嘎瑪糧食大戶指標策略3</h5>
                                         <h6 class="font-red"><span class="growups"></span>120.9%</h6>
-                                        <img src="image/dashbroad/graph2.png" alt=""></div>
+                                        <img src="image/dashbroad/graph2.png" alt="" style="width: 240px;"></div>
                                     <div class="borderb">
                                         <h5>嘎瑪糧食大戶指標策略4</h5>
                                         <h6 class="font-red"><span class="growups"></span>120.9%</h6>
-                                        <img src="image/dashbroad/graph2.png" alt=""></div>
+                                        <img src="image/dashbroad/graph2.png" alt="" style="width: 240px;"></div>
                                 </div>
                             </div>
 
@@ -298,15 +281,15 @@
 
                 </div>
             </div>
-            <div class="col-10 offset-2 strategylist" style="margin-top:130px">
-                <div class="row strategyline" style="padding: 0 71px; margin: 20px 0;">
-                    <div class="w-100" style="display: flex;justify-content: space-between;margin: 15px">
+            <div class="strategylist content" style="margin-top:130px;">
+                <div class="row wchange" style="height: auto;margin: 20px auto;transition: 100ms;">
+                    <div class="w-100" style="display: flex;justify-content: space-between;margin: 15px 0;height: 32px;">
                         <span style="display:inline; background-color: #F8777D;padding:5px 15px;text-align: center;color: #FFFFFF;">推薦策略</span>
                         <span style="display:inline;padding:5px"><a href="#" style="color:rgb(59, 59, 59)">查看更多>></a></span>
                     </div>
-                    <div class="col-3">
-                        <div class="strategy s1">
-                            <div class="row justify-content-center">
+                    <div class="strategyfilter">
+                        <div class="row strategylis" id="lis1" style="left: 0px;">
+                            <div class="strategy s1">
                                 <div class="row justify-content-center">
                                     <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
                                         </img>
@@ -324,163 +307,328 @@
                                             <div class="empty-star"></div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- <div class="w-100" style="height: 0;"></div> -->
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
 
-                                <!-- 分隔線 -->
-                                <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
-                                <div class="row justify-content-center">
-                                    <div class="col-5" style="padding: 0 5px;">
-                                        <div class="strategy-number">
-                                            <h2 style="color:#f8777d">+87.9%</h2>
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
                                         </div>
-                                        <div class="strategy-max">最大回檔：10%</div>
-                                    </div>
-                                    <div class="col-7" style="padding: 0 5px;">
-                                        <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
-                                            </img>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail1')" type="button" style="width: 25%;">查看</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail1')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="strategy s2">
-                            <div class="row justify-content-center">
-                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
-                                    </img>
-                                </div>
-                                <div class="strategy-name">
-                                    <h4>嘎瑪糧食大戶指標策略2</h4>
-                                    <h5>#小資#大戶指標#長期</h5>
-                                    <div class="row strategy-star align-items-center">
-                                        <h5>劉重慶</h5>
-                                        <h6>3.6</h6>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="half-star"></div>
-                                        <div class="empty-star"></div>
-                                    </div>
-                                </div>
-                                <!-- <div class="w-100" style="height: 0;"></div> -->
-
-                                <!-- 分隔線 -->
-                                <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                            <div class="strategy s2">
                                 <div class="row justify-content-center">
-                                    <div class="col-5" style="padding: 0 5px;">
-                                        <div class="strategy-number">
-                                            <h2 style="color:#f8777d">+87.9%</h2>
-                                        </div>
-                                        <div class="strategy-max">最大回檔：10%</div>
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
                                     </div>
-                                    <div class="col-7" style="padding: 0 5px;">
-                                        <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
-                                            </img>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪糧食大戶指標策略2</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
                                         </div>
                                     </div>
-                                    <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail2')" type="button" style="width: 25%;">查看</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail2')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="strategy s3">
-                            <div class="row justify-content-center">
-                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
-                                    </img>
-                                </div>
-                                <div class="strategy-name">
-                                    <h4>嘎瑪糧食大戶指標策略3</h4>
-                                    <h5>#小資#大戶指標#長期</h5>
-                                    <div class="row strategy-star align-items-center">
-                                        <h5>劉重慶</h5>
-                                        <h6>3.6</h6>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="half-star"></div>
-                                        <div class="empty-star"></div>
-                                    </div>
-                                </div>
-                                <!-- <div class="w-100" style="height: 0;"></div> -->
-
-                                <!-- 分隔線 -->
-                                <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                            <div class="strategy s3">
                                 <div class="row justify-content-center">
-                                    <div class="col-5" style="padding: 0 5px;">
-                                        <div class="strategy-number">
-                                            <h2 style="color:#f8777d">+87.9%</h2>
-                                        </div>
-                                        <div class="strategy-max">最大回檔：10%</div>
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
                                     </div>
-                                    <div class="col-7" style="padding: 0 5px;">
-                                        <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
-                                            </img>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪糧食大戶指標策略3</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
                                         </div>
                                     </div>
-                                    <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail3')" type="button" style="width: 25%;">查看</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail3')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="strategy s4">
-                            <div class="row justify-content-center">
-                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
-                                    </img>
-                                </div>
-                                <div class="strategy-name">
-                                    <h4>嘎瑪糧食大戶指標策略4</h4>
-                                    <h5>#小資#大戶指標#長期</h5>
-                                    <div class="row strategy-star align-items-center">
-                                        <h5>劉重慶</h5>
-                                        <h6>3.6</h6>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="half-star"></div>
-                                        <div class="empty-star"></div>
-                                    </div>
-                                </div>
-                                <!-- <div class="w-100" style="height: 0;"></div> -->
-
-                                <!-- 分隔線 -->
-                                <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                            <div class="strategy s4">
                                 <div class="row justify-content-center">
-                                    <div class="col-5" style="padding: 0 5px;">
-                                        <div class="strategy-number">
-                                            <h2 style="color:#f8777d">+87.9%</h2>
-                                        </div>
-                                        <div class="strategy-max">最大回檔：10%</div>
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
                                     </div>
-                                    <div class="col-7" style="padding: 0 5px;">
-                                        <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
-                                            </img>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪糧食大戶指標策略4</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
                                         </div>
                                     </div>
-                                    <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail4')" type="button" style="width: 25%;">查看</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail4')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="strategy s5">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪糧食大戶指標策略5</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail5')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s6">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪糧食大戶指標策略6</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail6')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s7">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪糧食大戶指標策略7</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail7')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s8">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪糧食大戶指標策略8</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail8')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+                        <a href="javascript:;" id="prev1" class="arrow">&lt;</a>
+                        <a href="javascript:;" id="next1" class="arrow">&gt;</a>
                     </div>
                     <div class="col-12">
                         <div class="strategydetail" id="detail1">
@@ -490,7 +638,7 @@
                             </div>
                             <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
                             <div class="row" style="padding: 20px 0;">
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="checkitem">
                                         <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
                                         <text>低風險，穩定成長</text>
@@ -509,7 +657,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row" style="margin:5px">
                                         <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
                                         <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
@@ -519,7 +667,7 @@
                                     <div class="strategy-tag"># 長期</div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row sausage">
                                         <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
                                         <div class="col">
@@ -556,19 +704,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <p style=" color:#A1B0C6;width:100%;text-align: end;"><button class="btn timetag">1月</button>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
                                         <button class="btn timetag active" aria-pressed="true">3月</button>
                                         <button class="btn timetag">6月</button>
                                         <button class="btn timetag">1年</button>
                                         <button class="btn timetag">回測</button>
-                                        <text style="margin-left: 20px;">最大回檔區間</text>
-                                        <text style="color: black;">2019.08.27 - 2019.09.01</text>
-                                    </p>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                </span>
                                     <div class="col">
                                         <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
                                         <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
                                         <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
 
 
                                 </div>
@@ -581,7 +730,7 @@
                             </div>
                             <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
                             <div class="row" style="padding: 20px 0;">
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="checkitem">
                                         <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
                                         <text>低風險，穩定成長</text>
@@ -600,7 +749,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row" style="margin:5px">
                                         <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
                                         <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
@@ -610,7 +759,7 @@
                                     <div class="strategy-tag"># 長期</div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row sausage">
                                         <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
                                         <div class="col">
@@ -647,19 +796,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <p style=" color:#A1B0C6;width:100%;text-align: end;"><button class="btn timetag">1月</button>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
                                         <button class="btn timetag active" aria-pressed="true">3月</button>
                                         <button class="btn timetag">6月</button>
                                         <button class="btn timetag">1年</button>
                                         <button class="btn timetag">回測</button>
-                                        <text style="margin-left: 20px;">最大回檔區間</text>
-                                        <text style="color: black;">2019.08.27 - 2019.09.01</text>
-                                    </p>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                </span>
                                     <div class="col">
                                         <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
                                         <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
                                         <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
 
 
                                 </div>
@@ -672,7 +822,7 @@
                             </div>
                             <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
                             <div class="row" style="padding: 20px 0;">
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="checkitem">
                                         <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
                                         <text>低風險，穩定成長</text>
@@ -691,7 +841,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row" style="margin:5px">
                                         <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
                                         <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
@@ -701,7 +851,7 @@
                                     <div class="strategy-tag"># 長期</div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row sausage">
                                         <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
                                         <div class="col">
@@ -738,15 +888,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <p style=" color:#A1B0C6;width:100%;text-align: end;"><button class="btn timetag">1月</button>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
                                         <button class="btn timetag active" aria-pressed="true">3月</button>
                                         <button class="btn timetag">6月</button>
                                         <button class="btn timetag">1年</button>
                                         <button class="btn timetag">回測</button>
-                                        <text style="margin-left: 20px;">最大回檔區間</text>
-                                        <text style="color: black;">2019.08.27 - 2019.09.01</text>
-                                    </p>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                </span>
                                     <div class="col">
                                         <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
                                         <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
@@ -764,7 +914,7 @@
                             </div>
                             <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
                             <div class="row" style="padding: 20px 0;">
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="checkitem">
                                         <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
                                         <text>低風險，穩定成長</text>
@@ -783,7 +933,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row" style="margin:5px">
                                         <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
                                         <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
@@ -793,7 +943,7 @@
                                     <div class="strategy-tag"># 長期</div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row sausage">
                                         <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
                                         <div class="col">
@@ -830,211 +980,25 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <p style=" color:#A1B0C6;width:100%;text-align: end;"><button class="btn timetag">1月</button>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
                                         <button class="btn timetag active" aria-pressed="true">3月</button>
                                         <button class="btn timetag">6月</button>
                                         <button class="btn timetag">1年</button>
                                         <button class="btn timetag">回測</button>
-                                        <text style="margin-left: 20px;">最大回檔區間</text>
-                                        <text style="color: black;">2019.08.27 - 2019.09.01</text>
-                                    </p>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                </span>
                                     <div class="col">
                                         <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
                                         <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
                                         <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
 
 
+
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row strategyline" style="padding: 0 71px; margin: 20px 0;">
-                    <div class="w-100" style="display: flex;justify-content: space-between;margin: 15px">
-                        <span style="display:inline; background-color: #F8777D;padding:5px 15px;text-align: center;color: #FFFFFF;">推薦策略</span>
-                        <span style="display:inline;padding:5px"><a href="#" style="color:rgb(59, 59, 59)">查看更多>></a></span>
-                    </div>
-                    <div class="col-3">
-                        <div class="strategy s5">
-                            <div class="row justify-content-center">
-                                <div class="row justify-content-center">
-                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
-                                        </img>
-                                    </div>
-                                    <div class="strategy-name">
-                                        <h4>嘎瑪糧食大戶指標策略5</h4>
-                                        <h5>#小資#大戶指標#長期</h5>
-                                        <div class="row strategy-star align-items-center">
-                                            <h5>劉重慶</h5>
-                                            <h6>3.6</h6>
-                                            <div class="star"></div>
-                                            <div class="star"></div>
-                                            <div class="star"></div>
-                                            <div class="half-star"></div>
-                                            <div class="empty-star"></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="w-100" style="height: 0;"></div> -->
-
-                                <!-- 分隔線 -->
-                                <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
-                                <div class="row justify-content-center">
-                                    <div class="col-5" style="padding: 0 5px;">
-                                        <div class="strategy-number">
-                                            <h2 style="color:#f8777d">+87.9%</h2>
-                                        </div>
-                                        <div class="strategy-max">最大回檔：10%</div>
-                                    </div>
-                                    <div class="col-7" style="padding: 0 5px;">
-                                        <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
-                                            </img>
-                                        </div>
-                                    </div>
-                                    <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail( 'detail5')" type="button" style="width: 25%;">查看</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="strategy s6">
-                            <div class="row justify-content-center">
-                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
-                                    </img>
-                                </div>
-                                <div class="strategy-name">
-                                    <h4>嘎瑪糧食大戶指標策略6</h4>
-                                    <h5>#小資#大戶指標#長期</h5>
-                                    <div class="row strategy-star align-items-center">
-                                        <h5>劉重慶</h5>
-                                        <h6>3.6</h6>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="half-star"></div>
-                                        <div class="empty-star"></div>
-                                    </div>
-                                </div>
-                                <!-- <div class="w-100" style="height: 0;"></div> -->
-
-                                <!-- 分隔線 -->
-                                <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
-                                <div class="row justify-content-center">
-                                    <div class="col-5" style="padding: 0 5px;">
-                                        <div class="strategy-number">
-                                            <h2 style="color:#f8777d">+87.9%</h2>
-                                        </div>
-                                        <div class="strategy-max">最大回檔：10%</div>
-                                    </div>
-                                    <div class="col-7" style="padding: 0 5px;">
-                                        <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
-                                            </img>
-                                        </div>
-                                    </div>
-                                    <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail( 'detail6')" type="button" style="width: 25%;">查看</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="strategy s7">
-                            <div class="row justify-content-center">
-                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
-                                    </img>
-                                </div>
-                                <div class="strategy-name">
-                                    <h4>嘎瑪糧食大戶指標策略7</h4>
-                                    <h5>#小資#大戶指標#長期</h5>
-                                    <div class="row strategy-star align-items-center">
-                                        <h5>劉重慶</h5>
-                                        <h6>3.6</h6>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="half-star"></div>
-                                        <div class="empty-star"></div>
-                                    </div>
-                                </div>
-                                <!-- <div class="w-100" style="height: 0;"></div> -->
-
-                                <!-- 分隔線 -->
-                                <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
-                                <div class="row justify-content-center">
-                                    <div class="col-5" style="padding: 0 5px;">
-                                        <div class="strategy-number">
-                                            <h2 style="color:#f8777d">+87.9%</h2>
-                                        </div>
-                                        <div class="strategy-max">最大回檔：10%</div>
-                                    </div>
-                                    <div class="col-7" style="padding: 0 5px;">
-                                        <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
-                                            </img>
-                                        </div>
-                                    </div>
-                                    <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail( 'detail7')" type="button" style="width: 25%;">查看</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="strategy s8">
-                            <div class="row justify-content-center">
-                                <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
-                                    </img>
-                                </div>
-                                <div class="strategy-name">
-                                    <h4>嘎瑪糧食大戶指標策略8</h4>
-                                    <h5>#小資#大戶指標#長期</h5>
-                                    <div class="row strategy-star align-items-center">
-                                        <h5>劉重慶</h5>
-                                        <h6>3.6</h6>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="half-star"></div>
-                                        <div class="empty-star"></div>
-                                    </div>
-                                </div>
-                                <!-- <div class="w-100" style="height: 0;"></div> -->
-
-                                <!-- 分隔線 -->
-                                <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
-                                <div class="row justify-content-center">
-                                    <div class="col-5" style="padding: 0 5px;">
-                                        <div class="strategy-number">
-                                            <h2 style="color:#f8777d">+87.9%</h2>
-                                        </div>
-                                        <div class="strategy-max">最大回檔：10%</div>
-                                    </div>
-                                    <div class="col-7" style="padding: 0 5px;">
-                                        <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
-                                            </img>
-                                        </div>
-                                    </div>
-                                    <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail( 'detail8')" type="button" style="width: 25%;">查看</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
-                                        <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
                         <div class="strategydetail" id="detail5">
                             <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
                                 <span style="display:inline;font-size: 1.25rem;">咖馬糧食大戶指標策略5</span>
@@ -1042,7 +1006,7 @@
                             </div>
                             <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
                             <div class="row" style="padding: 20px 0;">
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="checkitem">
                                         <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
                                         <text>低風險，穩定成長</text>
@@ -1061,7 +1025,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row" style="margin:5px">
                                         <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
                                         <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
@@ -1071,7 +1035,7 @@
                                     <div class="strategy-tag"># 長期</div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row sausage">
                                         <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
                                         <div class="col">
@@ -1108,15 +1072,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <p style=" color:#A1B0C6;width:100%;text-align: end;"><button class="btn timetag">1月</button>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
                                         <button class="btn timetag active" aria-pressed="true">3月</button>
                                         <button class="btn timetag">6月</button>
                                         <button class="btn timetag">1年</button>
                                         <button class="btn timetag">回測</button>
-                                        <text style="margin-left: 20px;">最大回檔區間</text>
-                                        <text style="color: black;">2019.08.27 - 2019.09.01</text>
-                                    </p>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                            </span>
                                     <div class="col">
                                         <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
                                         <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
@@ -1134,7 +1098,7 @@
                             </div>
                             <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
                             <div class="row" style="padding: 20px 0;">
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="checkitem">
                                         <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
                                         <text>低風險，穩定成長</text>
@@ -1153,7 +1117,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row" style="margin:5px">
                                         <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
                                         <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
@@ -1163,7 +1127,7 @@
                                     <div class="strategy-tag"># 長期</div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row sausage">
                                         <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
                                         <div class="col">
@@ -1200,15 +1164,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <p style=" color:#A1B0C6;width:100%;text-align: end;"><button class="btn timetag">1月</button>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
                                         <button class="btn timetag active" aria-pressed="true">3月</button>
                                         <button class="btn timetag">6月</button>
                                         <button class="btn timetag">1年</button>
                                         <button class="btn timetag">回測</button>
-                                        <text style="margin-left: 20px;">最大回檔區間</text>
-                                        <text style="color: black;">2019.08.27 - 2019.09.01</text>
-                                    </p>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                            </span>
                                     <div class="col">
                                         <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
                                         <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
@@ -1226,7 +1190,7 @@
                             </div>
                             <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
                             <div class="row" style="padding: 20px 0;">
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="checkitem">
                                         <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
                                         <text>低風險，穩定成長</text>
@@ -1245,7 +1209,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row" style="margin:5px">
                                         <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
                                         <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
@@ -1255,7 +1219,7 @@
                                     <div class="strategy-tag"># 長期</div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row sausage">
                                         <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
                                         <div class="col">
@@ -1292,15 +1256,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <p style=" color:#A1B0C6;width:100%;text-align: end;"><button class="btn timetag">1月</button>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
                                         <button class="btn timetag active" aria-pressed="true">3月</button>
                                         <button class="btn timetag">6月</button>
                                         <button class="btn timetag">1年</button>
                                         <button class="btn timetag">回測</button>
-                                        <text style="margin-left: 20px;">最大回檔區間</text>
-                                        <text style="color: black;">2019.08.27 - 2019.09.01</text>
-                                    </p>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                            </span>
                                     <div class="col">
                                         <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
                                         <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
@@ -1318,7 +1282,7 @@
                             </div>
                             <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
                             <div class="row" style="padding: 20px 0;">
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="checkitem">
                                         <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
                                         <text>低風險，穩定成長</text>
@@ -1337,7 +1301,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row" style="margin:5px">
                                         <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
                                         <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
@@ -1347,7 +1311,7 @@
                                     <div class="strategy-tag"># 長期</div>
 
                                 </div>
-                                <div class="col-2 borderr">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
                                     <div class="row sausage">
                                         <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
                                         <div class="col">
@@ -1384,28 +1348,1119 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <p style="color:#A1B0C6;width:100%;text-align: end;"><button class="btn timetag">1月</button>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
                                         <button class="btn timetag active" aria-pressed="true">3月</button>
                                         <button class="btn timetag">6月</button>
                                         <button class="btn timetag">1年</button>
                                         <button class="btn timetag">回測</button>
-                                        <text style="margin-left: 20px;">最大回檔區間</text>
-                                        <text style="color: black;">2019.08.27 - 2019.09.01</text>
-                                    </p>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                </span>
                                     <div class="col">
                                         <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
                                         <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
                                         <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
 
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
+            <div class="strategylist content">
+                <div class="row wchange" style="height: auto;margin: 20px auto;transition: 100ms;">
+                    <div class="w-100" style="display: flex;justify-content: space-between;margin: 15px 0;height: 32px;">
+                        <span style="display:inline; background-color: #F8777D;padding:5px 15px;text-align: center;color: #FFFFFF;">推薦策略</span>
+                        <span style="display:inline;padding:5px"><a href="#" style="color:rgb(59, 59, 59)">查看更多>></a></span>
+                    </div>
+                    <div class="strategyfilter">
+                        <div class="row strategylis" id="lis2" style="left: 0px;">
+                            <div class="strategy s11">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪石油大戶指標策略1</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail11')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s12">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪石油大戶指標策略2</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail12')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s13">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪石油大戶指標策略3</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail13')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s14">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪石油大戶指標策略4</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail14')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s15">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪石油大戶指標策略5</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail15')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s16">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪石油大戶指標策略6</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail16')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s17">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪石油大戶指標策略7</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail17')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy s18">
+                                <div class="row justify-content-center">
+                                    <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                        </img>
+                                    </div>
+                                    <div class="strategy-name">
+                                        <h4>嘎瑪石油大戶指標策略8</h4>
+                                        <h5>#小資#大戶指標#長期</h5>
+                                        <div class="row strategy-star align-items-center">
+                                            <h5>劉重慶</h5>
+                                            <h6>3.6</h6>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="star"></div>
+                                            <div class="half-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                    <!-- 分隔線 -->
+                                    <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5" style="padding: 0 5px;">
+                                            <div class="strategy-number">
+                                                <h2 style="color:#f8777d">+87.9%</h2>
+                                            </div>
+                                            <div class="strategy-max">最大回檔：10%</div>
+                                        </div>
+                                        <div class="col-7" style="padding: 0 5px;">
+                                            <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                </img>
+                                            </div>
+                                        </div>
+                                        <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail18')" type="button" style="width: 25%;">查看</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                            <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="javascript:;" id="prev2" class="arrow">&lt;</a>
+                        <a href="javascript:;" id="next2" class="arrow">&gt;</a>
+                    </div>
+                    <div class="col-12">
+                        <div class="strategydetail" id="detail11">
+                            <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                <span style="display:inline;font-size: 1.25rem;">咖馬石油大戶指標策略1</span>
+                                <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                            </div>
+                            <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                            <div class="row" style="padding: 20px 0;">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>中風險，穩定成長</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>超過1000位用戶訂閱</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最高報酬率超過100%</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最長連續獲利超過3個月</text>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row" style="margin:5px">
+                                        <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                        <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於石油期貨進行空頭避險。</p>
+                                    </div>
+                                    <div class="strategy-tag"># 小資</div>
+                                    <div class="strategy-tag"># 大戶指標</div>
+                                    <div class="strategy-tag"># 長期</div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                            <p style="font-size:1rem;">臺灣股票、石油期貨</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                            <p style="font-size:1rem;">750,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                            <p style="font-size:1rem;">2019年09月03日</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                            <p style="font-size:1rem;">2.79</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                            <p style="font-size:1rem;">10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                        <button class="btn timetag active" aria-pressed="true">3月</button>
+                                        <button class="btn timetag">6月</button>
+                                        <button class="btn timetag">1年</button>
+                                        <button class="btn timetag">回測</button>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                            </span>
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
 
 
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategydetail" id="detail12">
+                            <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                <span style="display:inline;font-size: 1.25rem;">咖馬石油大戶指標策略2</span>
+                                <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                            </div>
+                            <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                            <div class="row" style="padding: 20px 0;">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>中風險，穩定成長</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>超過1000位用戶訂閱</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最高報酬率超過100%</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最長連續獲利超過3個月</text>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row" style="margin:5px">
+                                        <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                        <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於石油期貨進行空頭避險。</p>
+                                    </div>
+                                    <div class="strategy-tag"># 小資</div>
+                                    <div class="strategy-tag"># 大戶指標</div>
+                                    <div class="strategy-tag"># 長期</div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                            <p style="font-size:1rem;">臺灣股票、石油期貨</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                            <p style="font-size:1rem;">750,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                            <p style="font-size:1rem;">2019年09月03日</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                            <p style="font-size:1rem;">2.79</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                            <p style="font-size:1rem;">10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                        <button class="btn timetag active" aria-pressed="true">3月</button>
+                                        <button class="btn timetag">6月</button>
+                                        <button class="btn timetag">1年</button>
+                                        <button class="btn timetag">回測</button>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                            </span>
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategydetail" id="detail13">
+                            <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                <span style="display:inline;font-size: 1.25rem;">咖馬石油大戶指標策略3</span>
+                                <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                            </div>
+                            <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                            <div class="row" style="padding: 20px 0;">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>中風險，穩定成長</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>超過1000位用戶訂閱</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最高報酬率超過100%</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最長連續獲利超過3個月</text>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row" style="margin:5px">
+                                        <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                        <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於石油期貨進行空頭避險。</p>
+                                    </div>
+                                    <div class="strategy-tag"># 小資</div>
+                                    <div class="strategy-tag"># 大戶指標</div>
+                                    <div class="strategy-tag"># 長期</div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                            <p style="font-size:1rem;">臺灣股票、石油期貨</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                            <p style="font-size:1rem;">750,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                            <p style="font-size:1rem;">2019年09月03日</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                            <p style="font-size:1rem;">2.79</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                            <p style="font-size:1rem;">10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                        <button class="btn timetag active" aria-pressed="true">3月</button>
+                                        <button class="btn timetag">6月</button>
+                                        <button class="btn timetag">1年</button>
+                                        <button class="btn timetag">回測</button>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                            </span>
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategydetail" id="detail14">
+                            <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                <span style="display:inline;font-size: 1.25rem;">咖馬石油大戶指標策略4</span>
+                                <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                            </div>
+                            <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                            <div class="row" style="padding: 20px 0;">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>中風險，穩定成長</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>超過1000位用戶訂閱</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最高報酬率超過100%</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最長連續獲利超過3個月</text>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row" style="margin:5px">
+                                        <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                        <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於石油期貨進行空頭避險。</p>
+                                    </div>
+                                    <div class="strategy-tag"># 小資</div>
+                                    <div class="strategy-tag"># 大戶指標</div>
+                                    <div class="strategy-tag"># 長期</div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                            <p style="font-size:1rem;">臺灣股票、石油期貨</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                            <p style="font-size:1rem;">750,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                            <p style="font-size:1rem;">2019年09月03日</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                            <p style="font-size:1rem;">2.79</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                            <p style="font-size:1rem;">10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                        <button class="btn timetag active" aria-pressed="true">3月</button>
+                                        <button class="btn timetag">6月</button>
+                                        <button class="btn timetag">1年</button>
+                                        <button class="btn timetag">回測</button>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                            </span>
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategydetail" id="detail15">
+                            <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                <span style="display:inline;font-size: 1.25rem;">咖馬石油大戶指標策略5</span>
+                                <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                            </div>
+                            <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                            <div class="row" style="padding: 20px 0;">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>中風險，穩定成長</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>超過1000位用戶訂閱</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最高報酬率超過100%</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最長連續獲利超過3個月</text>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row" style="margin:5px">
+                                        <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                        <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於石油期貨進行空頭避險。</p>
+                                    </div>
+                                    <div class="strategy-tag"># 小資</div>
+                                    <div class="strategy-tag"># 大戶指標</div>
+                                    <div class="strategy-tag"># 長期</div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                            <p style="font-size:1rem;">臺灣股票、石油期貨</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                            <p style="font-size:1rem;">750,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                            <p style="font-size:1rem;">2019年09月03日</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                            <p style="font-size:1rem;">2.79</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                            <p style="font-size:1rem;">10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                        <button class="btn timetag active" aria-pressed="true">3月</button>
+                                        <button class="btn timetag">6月</button>
+                                        <button class="btn timetag">1年</button>
+                                        <button class="btn timetag">回測</button>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                        </span>
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategydetail" id="detail16">
+                            <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                <span style="display:inline;font-size: 1.25rem;">咖馬石油大戶指標策略6</span>
+                                <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                            </div>
+                            <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                            <div class="row" style="padding: 20px 0;">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>中風險，穩定成長</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>超過1000位用戶訂閱</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最高報酬率超過100%</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最長連續獲利超過3個月</text>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row" style="margin:5px">
+                                        <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                        <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於石油期貨進行空頭避險。</p>
+                                    </div>
+                                    <div class="strategy-tag"># 小資</div>
+                                    <div class="strategy-tag"># 大戶指標</div>
+                                    <div class="strategy-tag"># 長期</div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                            <p style="font-size:1rem;">臺灣股票、石油期貨</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                            <p style="font-size:1rem;">750,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                            <p style="font-size:1rem;">2019年09月03日</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                            <p style="font-size:1rem;">2.79</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                            <p style="font-size:1rem;">10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                        <button class="btn timetag active" aria-pressed="true">3月</button>
+                                        <button class="btn timetag">6月</button>
+                                        <button class="btn timetag">1年</button>
+                                        <button class="btn timetag">回測</button>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                        </span>
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategydetail" id="detail17">
+                            <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                <span style="display:inline;font-size: 1.25rem;">咖馬石油大戶指標策略7</span>
+                                <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                            </div>
+                            <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                            <div class="row" style="padding: 20px 0;">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>中風險，穩定成長</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>超過1000位用戶訂閱</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最高報酬率超過100%</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最長連續獲利超過3個月</text>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row" style="margin:5px">
+                                        <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                        <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於石油期貨進行空頭避險。</p>
+                                    </div>
+                                    <div class="strategy-tag"># 小資</div>
+                                    <div class="strategy-tag"># 大戶指標</div>
+                                    <div class="strategy-tag"># 長期</div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                            <p style="font-size:1rem;">臺灣股票、石油期貨</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                            <p style="font-size:1rem;">750,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                            <p style="font-size:1rem;">2019年09月03日</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                            <p style="font-size:1rem;">2.79</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                            <p style="font-size:1rem;">10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                        <button class="btn timetag active" aria-pressed="true">3月</button>
+                                        <button class="btn timetag">6月</button>
+                                        <button class="btn timetag">1年</button>
+                                        <button class="btn timetag">回測</button>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                        </span>
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategydetail" id="detail18">
+                            <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                <span style="display:inline;font-size: 1.25rem;">咖馬石油大戶指標策略8</span>
+                                <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                            </div>
+                            <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                            <div class="row" style="padding: 20px 0;">
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>中風險，穩定成長</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>超過1000位用戶訂閱</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最高報酬率超過100%</text>
+                                    </div>
+                                    <div class="checkitem">
+                                        <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                        <text>最長連續獲利超過3個月</text>
+                                    </div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row" style="margin:5px">
+                                        <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                        <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於石油期貨進行空頭避險。</p>
+                                    </div>
+                                    <div class="strategy-tag"># 小資</div>
+                                    <div class="strategy-tag"># 大戶指標</div>
+                                    <div class="strategy-tag"># 長期</div>
+
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                            <p style="font-size:1rem;">臺灣股票、石油期貨</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                            <p style="font-size:1rem;">750,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                            <p style="font-size:1rem;">2019年09月03日</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                            <p style="font-size:1rem;">2.79</p>
+                                        </div>
+                                    </div>
+                                    <div class="row sausage">
+                                        <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                        <div class="col">
+                                            <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                            <p style="font-size:1rem;">10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 margin-10">
+                                    <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                        <button class="btn timetag active" aria-pressed="true">3月</button>
+                                        <button class="btn timetag">6月</button>
+                                        <button class="btn timetag">1年</button>
+                                        <button class="btn timetag">回測</button>
+                                    </h6>
+                                    <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                            </span>
+                                    <div class="col">
+                                        <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                        <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                        <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <!-- Bootstrap core JavaScript -->
@@ -1416,78 +2471,11 @@
             $('#loading').fadeOut(1000);
         });
     </script>
-    <!-- 控制strategy detail -->
+
+
     <script>
-        let detailnum = 0;
-
-        function closeall() {
-            const Y = Array.from(document.getElementsByClassName("btn btn-outline-secondary btn-square btn-strategy-1 active"))
-            const X = Array.from(document.getElementsByClassName("strategydetail active"));
-            if (X.length !== 0) {
-                X[0].className = "strategydetail";
-            }
-            if (Y.length !== 0) {
-                Y[0].className = "btn btn-outline-secondary btn-square btn-strategy-1";
-                Y[0].setAttribute("onclick", "opendetail( 'detail" + detailnum + "')");
-                detailnum = 0;
-            }
-        }
-
-        function opendetail(detail) {
-            if (detailnum !== 0) {
-                closeall(detailnum);
-            }
-
-            const X = document.getElementById(detail);
-            detailnum = detail.slice(6)
-            const s = "s" + detailnum;
-            const Y = document.getElementsByClassName(s)[0].getElementsByClassName("btn-strategy-1")[0];
-            Y.setAttribute("onclick", "closeall()");
-            Y.className += " active";
-            X.className = "strategydetail active";
-            // document.documentElement.scrollTop += 30;
-        }
-    </script>
-    <!-- end of strategy detail -->
-    <script>
-        const detailgraph = Array.from(document.getElementsByClassName("detailgraph"));
-        const detailtag = Array.from(document.getElementsByClassName("detailtag"));
-
-        function show(detailtag) {
-            detailtag.className += " active";
-        }
-
-        function showoff(detailtag) {
-            detailtag.className = "detailtag"
-        }
-
-        detailgraph.forEach(function(t) {
-            t.addEventListener('mouseover', (t) => {
-                detailtag.forEach(function(f) {
-                    show(f);
-                })
-            })
-            t.addEventListener('mouseout', () => {
-                detailtag.forEach(function(f) {
-                    showoff(f);
-                })
-            })
-        })
-    </script>
-    <script>
-        var more = document.getElementsByClassName("morestrategy")[0];
-        $("#morearrow").on("click", function() {
-            if (more.className === "morestrategy") {
-                more.className += (" active");
-                $("#morearrow").html("▲");
-            } else {
-                more.className = "morestrategy";
-                $("#morearrow").html("▼");
-            }
-            setTimeout(function() {
-                more.className = "morestrategy";
-                $("#morearrow").html("▼");
-            }, 30000);
+        $("#sidebarbtn").on("click", function() {
+            $(".sidebar").toggleClass("active");
         })
     </script>
     <script>
@@ -1498,6 +2486,7 @@
             $(".regard-detail").attr("class", "regard-detail");
         })
     </script>
+    <script src="js/strategyfilter.js"></script>
 </body>
 
 </html>

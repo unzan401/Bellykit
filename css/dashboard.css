@@ -15,6 +15,100 @@ h6 {
     box-shadow: 0 0 0 0;
 }
 
+.strategy {
+    margin: 0 10px
+}
+
+@media (min-width:1720px) {
+    .wchange {
+        width: 1400px;
+    }
+}
+
+@media (max-width:1719.98px) {
+    .wchange {
+        width: 1050px;
+    }
+    #chick {
+        display: none!important;
+    }
+}
+
+@media (max-width:1050px) {
+    .wchange {
+        width: 700px;
+    }
+    #chick {
+        display: block!important;
+    }
+    #mores {
+        display: none!important;
+    }
+}
+
+@media (max-width:700px) {
+    .wchange {
+        width: 350px;
+    }
+}
+
+.wchange {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.strategyfilter {
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 280px;
+    width: inherit;
+}
+
+.strategylis {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    transition: 500ms;
+    width: 2800px;
+    height: 300px;
+}
+
+.arrow {
+    position: absolute;
+    top: 45%;
+    z-index: 2;
+    display: none;
+    width: 30px;
+    height: 30x;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+    color: #fff;
+    background-color: RGBA(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: RGBA(0, 0, 0, .7);
+}
+
+.strategyfilter:hover .arrow {
+    display: block;
+}
+
+#prev1,
+#prev2 {
+    left: 0;
+}
+
+#next1,
+#next2 {
+    right: 0;
+}
+
 .btn-outline-secondary.active {
     border-bottom-style: solid;
     border-bottom-width: 3px;
@@ -48,15 +142,41 @@ h6 {
     height: 70px;
 }
 
+@media (min-width: 1350px) {
+    .content {
+        margin-left: 320px;
+        width: calc(100vw - 320px);
+    }
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (max-width:1350px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar.active {
+        display: initial;
+    }
+    .content {
+        width: 100vw
+    }
+    .navbar-toggler {
+        display: inherit;
+    }
+}
+
 .sidebar {
     padding: 0;
     position: fixed;
     left: 0;
     top: 70px;
-    height: calc(100% - 70px);
+    height: calc(100vh - 70px);
     width: 320px;
     box-shadow: 3px 3px 3px 3px #cccccc;
     z-index: 90;
+    background-color: #EEEEEE;
 }
 
 .userinfo {
@@ -129,9 +249,9 @@ a:hover {
 }
 
 .userphoto {
-    margin: 30px 5px 30px 30px;
-    height: 90px;
-    width: 90px;
+    margin: auto 10px;
+    height: 80px;
+    width: 80px;
     background-color: #222222;
 }
 
@@ -140,22 +260,22 @@ a:hover {
     position: fixed;
     right: 0;
     top: 70px;
-    height: 150px;
-    width: 100%;
     z-index: 89;
+    background-color: #FFFFFF;
 }
 
 .strategybar {
-    background-color: #FFFFFF;
-    width: 100%;
     height: 150px;
     align-items: center;
     border-bottom-color: #EEEEEE;
     border-bottom-style: solid;
 }
 
-.strategy {
-    width: 100%;
+.strategybar.active {
+    height: auto;
+    align-items: center;
+    border-bottom-color: #EEEEEE;
+    border-bottom-style: solid;
 }
 
 .subscribe {
@@ -169,6 +289,7 @@ a:hover {
 .strategydetail {
     background-color: #FFFFFF;
     margin: 15px 0;
+    height: auto;
 }
 
 .checkitem {
@@ -183,7 +304,7 @@ a:hover {
     border-radius: 5px;
     color: #65BCBF;
     padding: 1px 5px;
-    margin: 5px 0;
+    margin: 5px 5px;
     font-weight: 600;
     background-color: #FFFFFF;
 }
@@ -203,6 +324,7 @@ a:hover {
     color: #FFFFFF;
     padding: 1px 10px;
     margin: 5px;
+    font-size: 0.8rem;
 }
 
 .timetag:active,
@@ -217,6 +339,11 @@ a:hover {
 .strategydetail {
     height: 0px;
     display: none;
+}
+
+.margin-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .strategydetail.active {
@@ -242,20 +369,14 @@ a:hover {
 }
 
 .morestrategy {
-    position: absolute;
-    left: 5px;
-    top: 130px;
-    padding: 10px;
-    width: 100%;
     display: none;
 }
 
 .morestrategy.active {
     position: absolute;
-    left: 5px;
-    top: 130px;
+    left: 63px;
+    top: 135px;
     padding: 0;
-    width: 100%;
     display: inherit;
     background-color: #EEEEEE;
 }
@@ -334,9 +455,28 @@ table.strategytable2 tr:nth-child(even) {
 .btn-message {
     margin: 10px;
     background-color: #F8777D;
+    color: #FFFFFF;
 }
 
 .btn-message:hover {
     background-color: #bb4b50;
     color: #FFFFFF;
+}
+
+@media (max-width:576px) {
+    .fixbtn {
+        position: absolute;
+        right: 0;
+        top: 75px;
+        z-index: 10;
+    }
+}
+
+@media (min-width:576.01px) {
+    .fixbtn {
+        position: fixed;
+        right: 0;
+        top: 75px;
+        z-index: 10;
+    }
 }
