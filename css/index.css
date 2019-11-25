@@ -255,9 +255,9 @@ body {
 .star,
 .half-star,
 .empty-star {
-    width: 20px;
-    height: 20px;
-    background-size: 20px 20px;
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
     background-repeat: no-repeat;
 }
 
