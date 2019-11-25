@@ -230,8 +230,8 @@
             </div>
 
             <div class="content">
-                <div class="container">
-                    <div class="row" style="margin-top: 20px;">
+                <div class="container" style="height: 150px;padding: 20px 0;">
+                    <div class="row">
                         <div class="col-md-6" style="margin:10px 0;">
                             <div class="row align-items-center">
                                 <span class="userphoto"></span>
@@ -258,21 +258,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12" style="border:#65BCBF 2px solid;border-radius: 2px;margin:10px 0;padding: 35px auto">
-                            <div>
-                                <h6><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+                    </div>
+                </div>
+                <div class="col-12" style="padding: 0;">
+                    <div class="strategylist" style="background-color: #CDCDCD;padding:10px 0px">
+                        <div class="row wchange" style="height: auto;margin: 20px auto;transition: 100ms;">
+                            <div class="row" style="margin: 0;height: 32px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
                                     <defs>
                                       <pattern id="pattern" width="1" height="1" viewBox="-1.368 -4.879 35.757 35.757">
                                         <image preserveAspectRatio="xMidYMid slice" width="33.022" height="26" xlink:href="data:image/png;base64,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"/>
                                       </pattern>
                                     </defs>
                                     <rect id="icon_crown" width="26" height="26" fill="url(#pattern)"/>
-                                  </svg> 熱門策略
-                                </h6>
+                                  </svg>
+                                <h5>熱門策略</h5>
                             </div>
-                            <div class="row" style="margin:auto">
-                                <div class="">
-                                    <div class="strategy">
+                            <div class="strategyfilter">
+                                <div class="row strategylis" id="lis1" style="left: 0px;">
+                                    <div class="strategy s1">
                                         <div class="row justify-content-center">
                                             <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
                                                 </img>
@@ -314,15 +318,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="d-none d-lg-block">
-                                    <div class="strategy">
+                                    <div class="strategy s2">
                                         <div class="row justify-content-center">
                                             <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
                                                 </img>
                                             </div>
                                             <div class="strategy-name">
-                                                <h4>嘎瑪糧食大戶指標策略1</h4>
+                                                <h4>嘎瑪糧食大戶指標策略2</h4>
                                                 <h5>#小資#大戶指標#長期</h5>
                                                 <div class="row strategy-star align-items-center">
                                                     <h5>劉重慶</h5>
@@ -351,22 +353,20 @@
                                                     </div>
                                                 </div>
                                                 <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail1')" type="button" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail2')" type="button" style="width: 25%;">查看</button>
                                                     <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
                                                     <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="d-none d-xl-block">
-                                    <div class="strategy">
+                                    <div class="strategy s3">
                                         <div class="row justify-content-center">
                                             <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
                                                 </img>
                                             </div>
                                             <div class="strategy-name">
-                                                <h4>嘎瑪糧食大戶指標策略1</h4>
+                                                <h4>嘎瑪糧食大戶指標策略3</h4>
                                                 <h5>#小資#大戶指標#長期</h5>
                                                 <div class="row strategy-star align-items-center">
                                                     <h5>劉重慶</h5>
@@ -395,486 +395,1171 @@
                                                     </div>
                                                 </div>
                                                 <div class="btn-group strategy-buttons" role="group" style="margin:0">
-                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail1')" type="button" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail3')" type="button" style="width: 25%;">查看</button>
                                                     <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
                                                     <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4" style="margin:10px 0;">
-                            <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略認證</h5>
-                                <div class="checkitem">
-                                    <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
-                                    <text>低風險，穩定成長</text>
-                                </div>
-                                <div class="checkitem">
-                                    <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
-                                    <text>超過1000位用戶訂閱</text>
-                                </div>
-                                <div class="checkitem">
-                                    <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
-                                    <text>最高報酬率超過100%</text>
-                                </div>
-                                <div class="checkitem">
-                                    <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
-                                    <text>最長連續獲利超過3個月</text>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4" style="margin:10px 0;">
-                            <div class="strategybox  h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略基本資料</h5>
-                                <div class="row sausage">
-                                    <img src="image/dashbroad/sausage.png" alt="" style="margin:8px;height:26px;width:26px">
-                                    <p style="color:#A1B0C6;font-size:0.9rem;margin:0 10px">交易商品</p>
-                                    <p style="font-size:1rem;">臺灣股票、糧食期貨</p>
+                                    <div class="strategy s4">
+                                        <div class="row justify-content-center">
+                                            <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                </img>
+                                            </div>
+                                            <div class="strategy-name">
+                                                <h4>嘎瑪糧食大戶指標策略4</h4>
+                                                <h5>#小資#大戶指標#長期</h5>
+                                                <div class="row strategy-star align-items-center">
+                                                    <h5>劉重慶</h5>
+                                                    <h6>3.6</h6>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="half-star"></div>
+                                                    <div class="empty-star"></div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="w-100" style="height: 0;"></div> -->
 
-                                </div>
-                                <div class="row sausage">
-                                    <img src="image/dashbroad/sausage.png" alt="" style="margin:8px;height:26px;width:26px">
-
-                                    <p style="color:#A1B0C6;font-size:0.9rem;margin:0 10px">每單位資金</p>
-                                    <p style="font-size:1rem;">750,000</p>
-
-                                </div>
-                                <div class="row sausage">
-                                    <img src="image/dashbroad/sausage.png" alt="" style="margin:8px;height:26px;width:26px">
-
-                                    <p style="color:#A1B0C6;font-size:0.9rem;margin:0 10px">策略開始時間</p>
-                                    <p style="font-size:1rem;">2019.09.03</p>
-
-                                </div>
-                                <div class="row sausage">
-                                    <img src="image/dashbroad/sausage.png" alt="" style="margin:8px;height:26px;width:26px">
-
-                                    <p style="color:#A1B0C6;font-size:0.9rem;margin:0 10px">夏普比率</p>
-                                    <p style="font-size:1rem;">2.79</p>
-
-                                </div>
-                                <div class="row sausage">
-                                    <img src="image/dashbroad/sausage.png" alt="" style="margin:8px;height:26px;width:26px">
-
-                                    <p style="color:#A1B0C6;font-size:0.9rem;margin:0 10px">最大回檔</p>
-                                    <p style="font-size:1rem;">10%</p>
-
-                                </div>
-                                <div class="row sausage">
-                                    <img src="image/dashbroad/sausage.png" alt="" style="margin:8px;height:26px;width:26px">
-
-                                    <p style="color:#A1B0C6;font-size:0.9rem;margin:0 10px">回測手續費</p>
-                                    <p style="font-size:1rem;">0.785%</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 justify-content-space-between" style="flex-direction: column;display: flex;">
-                            <div class="col strategybox" style="margin:10px 0;">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略簡介</h5>
-                                <p style="margin: 10px;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
-                            </div>
-                            <div class="row strategybox" style="margin:10px 0;">
-                                <div style="background-color: #000;width: 90px;height: 90px;margin:auto 10px"></div>
-                                <div class="col justify-content-center" style="margin: 20px 0;padding: 0;">
-                                    <div class="row align-items-center">
-                                        <h4 style="display: inline;margin-right: 10px;">劉重慶</h4>
-                                        <span class="row align-items-center">
-                                        <h6> 3.6 </h6>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="star"></div>
-                                        <div class="half-star"></div>
-                                        <div class="empty-star"></div></span>
-                                    </div>
-                                    <text style="color:#A1B0C6;margin-right: 15px;">加入時間</text><text>2018.08.30<br></text>
-                                    <text style="color:#A1B0C6;margin-right: 15px;">貢獻策略</text><text>34則</text>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-sm-6 d-md-block d-lg-none" style="margin:10px 0;">
-                            <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">指標</h5>
-                                <table class="strategytable" style="width: 100%;">
-                                    <thead>
-                                        <th></th>
-                                        <th>
-                                            <div style="display: inline-block; border-radius: 5px; width:2.5rem;color: #FFFFFF;background-color: #F8777D; padding:2px 5px;">上線</div>
-                                        </th>
-                                        <th>
-                                            <div style="display: inline-block;border-radius: 5px; width:2.5rem;color: #FFFFFF;background-color: #F8777D; padding:2px 5px">回測</div>
-                                        </th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="tl">勝率</td>
-                                            <td>45.6%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tl">進場交易頻率</td>
-                                            <td>2次/年</td>
-                                            <td>2次/年</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tl">最大連續虧損次數</td>
-                                            <td>8次</td>
-                                            <td>4次</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tl">風險報酬比</td>
-                                            <td>7.53</td>
-                                            <td>9.42</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tl">夏普比率</td>
-                                            <td>1.45</td>
-                                            <td>1.76</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-8" style="margin:20px 0">
-                            <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">損益圖</h5>
-                                <p style=" color:#A1B0C6;width:100%;text-align: end;right: 10px;"><button class="btn timetag">1月</button>
-                                    <button class="btn timetag active" aria-pressed="true">3月</button>
-                                    <button class="btn timetag">6月</button>
-                                    <button class="btn timetag">1年</button>
-                                    <button class="btn timetag">回測</button><span style="display: inline-block;">
-                                    <text style="margin-left: 10px;">最大回檔區間</text>
-                                    <text style="color: black;">2019.08.27 - 2019.09.01</text></span>
-                                </p>
-                                <div class="col">
-                                    <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
-                                    <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
-                                    <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 d-lg-block d-none" style="margin:20px 0">
-                            <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">指標</h5>
-                                <table class="strategytable" style="width: 100%;">
-                                    <thead>
-                                        <th></th>
-                                        <th>
-                                            <div style="display: inline-block; border-radius: 5px; width:2.5rem;color: #FFFFFF;background-color: #F8777D; padding:2px 5px;">上線</div>
-                                        </th>
-                                        <th>
-                                            <div style="display: inline-block;border-radius: 5px; width:2.5rem;color: #FFFFFF;background-color: #F8777D; padding:2px 5px">回測</div>
-                                        </th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="tl">勝率</td>
-                                            <td>45.6%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tl">進場交易頻率</td>
-                                            <td>2次/年</td>
-                                            <td>2次/年</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tl">最大連續虧損次數</td>
-                                            <td>8次</td>
-                                            <td>4次</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tl">風險報酬比</td>
-                                            <td>7.53</td>
-                                            <td>9.42</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tl">夏普比率</td>
-                                            <td>1.45</td>
-                                            <td>1.76</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-lg-8" style="margin:20px 0">
-                            <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">目前觀察名單</h5>
-                                <table class="strategytable2">
-                                    <thead>
-                                        <th>日期時間</th>
-                                        <th>股票名稱</th>
-                                        <th>成交價</th>
-                                        <th>目前市價</th>
-                                        <th>損益</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2019/11/09</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4" style="margin:20px 0">
-                            <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">預計加入觀察</h5>
-                                <table class="strategytable2">
-                                    <thead>
-                                        <th>操作</th>
-                                        <th>股票名稱</th>
-                                        <th>操作時間</th>
-                                        <th>最新收盤價</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td style="color:#F8777D">買</td>
-                                            <td>2337旺宏</td>
-                                            <td>11/09</td>
-                                            <td>29.6</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="color:#F8777D">買</td>
-                                            <td>2337旺宏</td>
-                                            <td>11/09</td>
-                                            <td>29.6</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="color:#F8777D">買</td>
-                                            <td>2337旺宏</td>
-                                            <td>11/09</td>
-                                            <td>29.6</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="color:#65BCBF">賣</td>
-                                            <td>2337旺宏</td>
-                                            <td>11/09</td>
-                                            <td>29.6</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="color:#F8777D">買</td>
-                                            <td>2337旺宏</td>
-                                            <td>11/09</td>
-                                            <td>29.6</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="color:#F8777D">買</td>
-                                            <td>2337旺宏</td>
-                                            <td>11/09</td>
-                                            <td>29.6</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="color:#F8777D">買</td>
-                                            <td>2337旺宏</td>
-                                            <td>11/09</td>
-                                            <td>29.6</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="color:#F8777D">買</td>
-                                            <td>2337旺宏</td>
-                                            <td>11/09</td>
-                                            <td>29.6</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4" style="margin:20px 0;min-height: 350px;">
-                            <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">近期收益最高</h5>
-                                <div class="col" style="height:90%">
-                                    <div class="row align-items-center" style="height: 30%;">
-                                        <h5>2337 旺宏</h5>
-                                        <h3 style="margin-left: 10%;font-weight:600; color: #F8777D"><span class="growup"></span>32.1%</h3>
-                                    </div>
-                                    <p><text style="color:#A1B0C6 ;">持股期間<br></text>2019/11/09-2019/11/12</p>
-                                    <p><text style="color:#A1B0C6 ;">買入價-賣出價<br></text>29.6 - 39.1</p>
-                                    <img src="image/dashbroad/318X120_stairs-01.png" alt="" style="height:auto;width:100%;margin-top:-75px">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-8" style="margin:20px 0">
-                            <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">歷史觀察名單</h5>
-                                <table class="strategytable2">
-                                    <thead>
-                                        <th>持股期間</th>
-                                        <th>股票名稱</th>
-                                        <th>買入價</th>
-                                        <th>賣出價</th>
-                                        <th>損益</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2019/11/09-2019/11/12</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09-2019/11/12</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09-2019/11/12</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09-2019/11/12</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09-2019/11/12</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09-2019/11/12</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09-2019/11/12</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2019/11/09-2019/11/12</td>
-                                            <td>2337旺宏</td>
-                                            <td>29.6</td>
-                                            <td>39.1</td>
-                                            <td style="color:#F8777D">▲32.09%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        </div>
-
-                        <div class="col-12" style="margin:20px 0">
-                            <div class="strategybox h-100">
-                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">評論</h5>
-                                <div class="col-12">
-                                    <div class="row align-items-center borderb" style="padding:20px 0;">
-                                        <span class="userphoto-s"></span>
-                                        <div class="col">
-                                            <h6 style="color:#0D1B46">劉重慶</h6>
-                                            <input type="text" class="form-control" id="message" placeholder="留下您的評論" style="margin-top: 5px;height: 1.5rem;;font-size: 0.8rem;">
-                                        </div>
-                                        <button class="btn btn-default btn-message">送出</button>
-                                    </div>
-                                    <div class="row align-items-center borderb" style="padding:10px 0;">
-                                        <span class="userphoto-s"></span>
-                                        <div class="col">
-                                            <h6 style="color:#0D1B46">陳開根<text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
-                                            <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 我相信你哦，最好不要讓我失望！</h6>
+                                            <!-- 分隔線 -->
+                                            <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-5" style="padding: 0 5px;">
+                                                    <div class="strategy-number">
+                                                        <h2 style="color:#f8777d">+87.9%</h2>
+                                                    </div>
+                                                    <div class="strategy-max">最大回檔：10%</div>
+                                                </div>
+                                                <div class="col-7" style="padding: 0 5px;">
+                                                    <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                        </img>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail4')" type="button" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row align-items-center borderb" style="padding:10px 0;">
-                                        <span class="userphoto-s"></span>
-                                        <div class="col">
-                                            <h6 style="color:#0D1B46">大明<text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
-                                            <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 自從使用了這個策略後，我每次考試都一百分！</h6>
-                                        </div>
-                                        <div class="w-100"></div>
-                                        <span class="userphoto-s" style="margin-left: 70px;"></span>
-                                        <div class="col">
-                                            <h6 style="color:#0D1B46">劉重慶<text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
-                                            <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 我是不曉得為什麼你連留言都要抄就是了</h6>
-                                        </div>
+                                    <div class="strategy s5">
+                                        <div class="row justify-content-center">
+                                            <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                </img>
+                                            </div>
+                                            <div class="strategy-name">
+                                                <h4>嘎瑪糧食大戶指標策略5</h4>
+                                                <h5>#小資#大戶指標#長期</h5>
+                                                <div class="row strategy-star align-items-center">
+                                                    <h5>劉重慶</h5>
+                                                    <h6>3.6</h6>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="half-star"></div>
+                                                    <div class="empty-star"></div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="w-100" style="height: 0;"></div> -->
 
+                                            <!-- 分隔線 -->
+                                            <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-5" style="padding: 0 5px;">
+                                                    <div class="strategy-number">
+                                                        <h2 style="color:#f8777d">+87.9%</h2>
+                                                    </div>
+                                                    <div class="strategy-max">最大回檔：10%</div>
+                                                </div>
+                                                <div class="col-7" style="padding: 0 5px;">
+                                                    <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                        </img>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail5')" type="button" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="row align-items-center borderb" style="padding:10px 0;">
-                                        <span class="userphoto-s"></span>
-                                        <div class="col">
-                                            <h6 style="color:#0D1B46">阿美<text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
-                                            <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 自從使用了這個策略後，我每次考試都一百分！</h6>
+                                    <div class="strategy s6">
+                                        <div class="row justify-content-center">
+                                            <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                </img>
+                                            </div>
+                                            <div class="strategy-name">
+                                                <h4>嘎瑪糧食大戶指標策略6</h4>
+                                                <h5>#小資#大戶指標#長期</h5>
+                                                <div class="row strategy-star align-items-center">
+                                                    <h5>劉重慶</h5>
+                                                    <h6>3.6</h6>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="half-star"></div>
+                                                    <div class="empty-star"></div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                            <!-- 分隔線 -->
+                                            <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-5" style="padding: 0 5px;">
+                                                    <div class="strategy-number">
+                                                        <h2 style="color:#f8777d">+87.9%</h2>
+                                                    </div>
+                                                    <div class="strategy-max">最大回檔：10%</div>
+                                                </div>
+                                                <div class="col-7" style="padding: 0 5px;">
+                                                    <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                        </img>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail6')" type="button" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="strategy s7">
+                                        <div class="row justify-content-center">
+                                            <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                </img>
+                                            </div>
+                                            <div class="strategy-name">
+                                                <h4>嘎瑪糧食大戶指標策略7</h4>
+                                                <h5>#小資#大戶指標#長期</h5>
+                                                <div class="row strategy-star align-items-center">
+                                                    <h5>劉重慶</h5>
+                                                    <h6>3.6</h6>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="half-star"></div>
+                                                    <div class="empty-star"></div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                            <!-- 分隔線 -->
+                                            <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-5" style="padding: 0 5px;">
+                                                    <div class="strategy-number">
+                                                        <h2 style="color:#f8777d">+87.9%</h2>
+                                                    </div>
+                                                    <div class="strategy-max">最大回檔：10%</div>
+                                                </div>
+                                                <div class="col-7" style="padding: 0 5px;">
+                                                    <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                        </img>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail7')" type="button" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="strategy s8">
+                                        <div class="row justify-content-center">
+                                            <div class="strategy-photo"><img src="image/mylogo-01.png" width="90px" height="90px" alt="logo">
+                                                </img>
+                                            </div>
+                                            <div class="strategy-name">
+                                                <h4>嘎瑪糧食大戶指標策略8</h4>
+                                                <h5>#小資#大戶指標#長期</h5>
+                                                <div class="row strategy-star align-items-center">
+                                                    <h5>劉重慶</h5>
+                                                    <h6>3.6</h6>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="star"></div>
+                                                    <div class="half-star"></div>
+                                                    <div class="empty-star"></div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="w-100" style="height: 0;"></div> -->
+
+                                            <!-- 分隔線 -->
+                                            <div style="width:100%;height:1px; background:#BBBBBB;margin: 20px 0;"></div>
+                                            <div class="row justify-content-center">
+                                                <div class="col-5" style="padding: 0 5px;">
+                                                    <div class="strategy-number">
+                                                        <h2 style="color:#f8777d">+87.9%</h2>
+                                                    </div>
+                                                    <div class="strategy-max">最大回檔：10%</div>
+                                                </div>
+                                                <div class="col-7" style="padding: 0 5px;">
+                                                    <div class="strategy-graph"><img src="image/graph.jpg" width="180px" height="60px" alt="logo">
+                                                        </img>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-group strategy-buttons" role="group" style="margin:0">
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-1" onclick="opendetail('detail8')" type="button" style="width: 25%;">查看</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-2" type="button" style="width: 25%">關注</button>
+                                                    <button class="btn btn-outline-secondary btn-square btn-strategy-3" type="button" style="width: 50%">訂閱</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a href="javascript:;" id="prev1" class="arrow">&lt;</a>
+                                <a href="javascript:;" id="next1" class="arrow">&gt;</a>
+                            </div>
+                            <div class="col-12">
+                                <div class="strategydetail" id="detail1">
+                                    <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                        <span style="display:inline;font-size: 1.25rem;">咖馬糧食大戶指標策略1</span>
+                                        <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                                    </div>
+                                    <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                                    <div class="row" style="padding: 20px 0;">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>低風險，穩定成長</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>超過1000位用戶訂閱</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最高報酬率超過100%</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最長連續獲利超過3個月</text>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row" style="margin:5px">
+                                                <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                                <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
+                                            </div>
+                                            <div class="strategy-tag"># 小資</div>
+                                            <div class="strategy-tag"># 大戶指標</div>
+                                            <div class="strategy-tag"># 長期</div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                                    <p style="font-size:1rem;">臺灣股票、糧食期貨</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                                    <p style="font-size:1rem;">750,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                                    <p style="font-size:1rem;">2019年09月03日</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                                    <p style="font-size:1rem;">2.79</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                                    <p style="font-size:1rem;">10%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 margin-10">
+                                            <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                                <button class="btn timetag active" aria-pressed="true">3月</button>
+                                                <button class="btn timetag">6月</button>
+                                                <button class="btn timetag">1年</button>
+                                                <button class="btn timetag">回測</button>
+                                            </h6>
+                                            <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                        </span>
+                                            <div class="col">
+                                                <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                                <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                                <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="strategydetail" id="detail2">
+                                    <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                        <span style="display:inline;font-size: 1.25rem;">咖馬糧食大戶指標策略2</span>
+                                        <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                                    </div>
+                                    <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                                    <div class="row" style="padding: 20px 0;">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>低風險，穩定成長</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>超過1000位用戶訂閱</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最高報酬率超過100%</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最長連續獲利超過3個月</text>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row" style="margin:5px">
+                                                <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                                <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
+                                            </div>
+                                            <div class="strategy-tag"># 小資</div>
+                                            <div class="strategy-tag"># 大戶指標</div>
+                                            <div class="strategy-tag"># 長期</div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                                    <p style="font-size:1rem;">臺灣股票、糧食期貨</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                                    <p style="font-size:1rem;">750,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                                    <p style="font-size:1rem;">2019年09月03日</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                                    <p style="font-size:1rem;">2.79</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                                    <p style="font-size:1rem;">10%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 margin-10">
+                                            <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                                <button class="btn timetag active" aria-pressed="true">3月</button>
+                                                <button class="btn timetag">6月</button>
+                                                <button class="btn timetag">1年</button>
+                                                <button class="btn timetag">回測</button>
+                                            </h6>
+                                            <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                        </span>
+                                            <div class="col">
+                                                <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                                <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                                <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="strategydetail" id="detail3">
+                                    <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                        <span style="display:inline;font-size: 1.25rem;">咖馬糧食大戶指標策略3</span>
+                                        <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                                    </div>
+                                    <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                                    <div class="row" style="padding: 20px 0;">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>低風險，穩定成長</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>超過1000位用戶訂閱</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最高報酬率超過100%</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最長連續獲利超過3個月</text>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row" style="margin:5px">
+                                                <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                                <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
+                                            </div>
+                                            <div class="strategy-tag"># 小資</div>
+                                            <div class="strategy-tag"># 大戶指標</div>
+                                            <div class="strategy-tag"># 長期</div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                                    <p style="font-size:1rem;">臺灣股票、糧食期貨</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                                    <p style="font-size:1rem;">750,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                                    <p style="font-size:1rem;">2019年09月03日</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                                    <p style="font-size:1rem;">2.79</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                                    <p style="font-size:1rem;">10%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 margin-10">
+                                            <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                                <button class="btn timetag active" aria-pressed="true">3月</button>
+                                                <button class="btn timetag">6月</button>
+                                                <button class="btn timetag">1年</button>
+                                                <button class="btn timetag">回測</button>
+                                            </h6>
+                                            <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                        </span>
+                                            <div class="col">
+                                                <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                                <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                                <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="strategydetail" id="detail4">
+                                    <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                        <span style="display:inline;font-size: 1.25rem;">咖馬糧食大戶指標策略4</span>
+                                        <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                                    </div>
+                                    <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                                    <div class="row" style="padding: 20px 0;">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>低風險，穩定成長</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>超過1000位用戶訂閱</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最高報酬率超過100%</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最長連續獲利超過3個月</text>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row" style="margin:5px">
+                                                <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                                <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
+                                            </div>
+                                            <div class="strategy-tag"># 小資</div>
+                                            <div class="strategy-tag"># 大戶指標</div>
+                                            <div class="strategy-tag"># 長期</div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                                    <p style="font-size:1rem;">臺灣股票、糧食期貨</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                                    <p style="font-size:1rem;">750,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                                    <p style="font-size:1rem;">2019年09月03日</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                                    <p style="font-size:1rem;">2.79</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                                    <p style="font-size:1rem;">10%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 margin-10">
+                                            <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                                <button class="btn timetag active" aria-pressed="true">3月</button>
+                                                <button class="btn timetag">6月</button>
+                                                <button class="btn timetag">1年</button>
+                                                <button class="btn timetag">回測</button>
+                                            </h6>
+                                            <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                        </span>
+                                            <div class="col">
+                                                <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                                <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                                <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="strategydetail" id="detail5">
+                                    <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                        <span style="display:inline;font-size: 1.25rem;">咖馬糧食大戶指標策略5</span>
+                                        <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                                    </div>
+                                    <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                                    <div class="row" style="padding: 20px 0;">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>低風險，穩定成長</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>超過1000位用戶訂閱</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最高報酬率超過100%</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最長連續獲利超過3個月</text>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row" style="margin:5px">
+                                                <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                                <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
+                                            </div>
+                                            <div class="strategy-tag"># 小資</div>
+                                            <div class="strategy-tag"># 大戶指標</div>
+                                            <div class="strategy-tag"># 長期</div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                                    <p style="font-size:1rem;">臺灣股票、糧食期貨</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                                    <p style="font-size:1rem;">750,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                                    <p style="font-size:1rem;">2019年09月03日</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                                    <p style="font-size:1rem;">2.79</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                                    <p style="font-size:1rem;">10%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 margin-10">
+                                            <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                                <button class="btn timetag active" aria-pressed="true">3月</button>
+                                                <button class="btn timetag">6月</button>
+                                                <button class="btn timetag">1年</button>
+                                                <button class="btn timetag">回測</button>
+                                            </h6>
+                                            <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                    </span>
+                                            <div class="col">
+                                                <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                                <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                                <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="strategydetail" id="detail6">
+                                    <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                        <span style="display:inline;font-size: 1.25rem;">咖馬糧食大戶指標策略6</span>
+                                        <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                                    </div>
+                                    <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                                    <div class="row" style="padding: 20px 0;">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>低風險，穩定成長</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>超過1000位用戶訂閱</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最高報酬率超過100%</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最長連續獲利超過3個月</text>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row" style="margin:5px">
+                                                <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                                <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
+                                            </div>
+                                            <div class="strategy-tag"># 小資</div>
+                                            <div class="strategy-tag"># 大戶指標</div>
+                                            <div class="strategy-tag"># 長期</div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                                    <p style="font-size:1rem;">臺灣股票、糧食期貨</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                                    <p style="font-size:1rem;">750,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                                    <p style="font-size:1rem;">2019年09月03日</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                                    <p style="font-size:1rem;">2.79</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                                    <p style="font-size:1rem;">10%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 margin-10">
+                                            <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                                <button class="btn timetag active" aria-pressed="true">3月</button>
+                                                <button class="btn timetag">6月</button>
+                                                <button class="btn timetag">1年</button>
+                                                <button class="btn timetag">回測</button>
+                                            </h6>
+                                            <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                    </span>
+                                            <div class="col">
+                                                <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                                <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                                <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="strategydetail" id="detail7">
+                                    <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                        <span style="display:inline;font-size: 1.25rem;">咖馬糧食大戶指標策略7</span>
+                                        <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                                    </div>
+                                    <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                                    <div class="row" style="padding: 20px 0;">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>低風險，穩定成長</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>超過1000位用戶訂閱</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最高報酬率超過100%</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最長連續獲利超過3個月</text>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row" style="margin:5px">
+                                                <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                                <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
+                                            </div>
+                                            <div class="strategy-tag"># 小資</div>
+                                            <div class="strategy-tag"># 大戶指標</div>
+                                            <div class="strategy-tag"># 長期</div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                                    <p style="font-size:1rem;">臺灣股票、糧食期貨</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                                    <p style="font-size:1rem;">750,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                                    <p style="font-size:1rem;">2019年09月03日</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                                    <p style="font-size:1rem;">2.79</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                                    <p style="font-size:1rem;">10%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 margin-10">
+                                            <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                                <button class="btn timetag active" aria-pressed="true">3月</button>
+                                                <button class="btn timetag">6月</button>
+                                                <button class="btn timetag">1年</button>
+                                                <button class="btn timetag">回測</button>
+                                            </h6>
+                                            <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                    </span>
+                                            <div class="col">
+                                                <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                                <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                                <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="strategydetail" id="detail8">
+                                    <div class="row w-100 align-items-center" style="display: flex;justify-content: space-between;padding:5px 15px;">
+                                        <span style="display:inline;font-size: 1.25rem;">咖馬糧食大戶指標策略8</span>
+                                        <span style="display:inline"><a href="strategy.html" class="btn" style="background-color:#A1B0C6;color:#FFFFFF;padding: 2px 10px;">詳細資料</a></span>
+                                    </div>
+                                    <div class="w-100" style="background-color: #EEEEEE;height: 1px;"></div>
+                                    <div class="row" style="padding: 20px 0;">
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>低風險，穩定成長</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>超過1000位用戶訂閱</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最高報酬率超過100%</text>
+                                            </div>
+                                            <div class="checkitem">
+                                                <img src="image/dashbroad/check.png" alt="" style="margin:5px;height:23px;width:23px">
+                                                <text>最長連續獲利超過3個月</text>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row" style="margin:5px">
+                                                <p style="color:#A1B0C6;font-size:0.9rem">策略簡介</p>
+                                                <p style="font-size:0.9rem;">利用籌碼及分點數據來偵測大戶進場時機，買進並持有1年，並於糧食期貨進行空頭避險。</p>
+                                            </div>
+                                            <div class="strategy-tag"># 小資</div>
+                                            <div class="strategy-tag"># 大戶指標</div>
+                                            <div class="strategy-tag"># 長期</div>
+
+                                        </div>
+                                        <div class="col-xl-2 col-lg-4 col-md-4 borderr margin-10">
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">交易商品</p>
+                                                    <p style="font-size:1rem;">臺灣股票、糧食期貨</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">每單位資金</p>
+                                                    <p style="font-size:1rem;">750,000</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">策略開始時間</p>
+                                                    <p style="font-size:1rem;">2019年09月03日</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">夏普比率</p>
+                                                    <p style="font-size:1rem;">2.79</p>
+                                                </div>
+                                            </div>
+                                            <div class="row sausage">
+                                                <img src="image/dashbroad/sausage.png" alt="" style="margin:3px;height:26px;width:26px">
+                                                <div class="col">
+                                                    <p style="color:#A1B0C6;font-size:0.9rem">最大回檔</p>
+                                                    <p style="font-size:1rem;">10%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-12 margin-10">
+                                            <h6 style=" color:#A1B0C6;display: inline-block;"><button class="btn timetag">1月</button>
+                                                <button class="btn timetag active" aria-pressed="true">3月</button>
+                                                <button class="btn timetag">6月</button>
+                                                <button class="btn timetag">1年</button>
+                                                <button class="btn timetag">回測</button>
+                                            </h6>
+                                            <span style="display:inline-block;"><text style="color:#A1B0C6;margin-left: 20px;">最大回檔區間 <text style="color: black;font-size:0.8rem">2019.08.27 - 2019.09.01</text></text>
+                                                        </span>
+                                            <div class="col">
+                                                <img src="image/dashbroad/detailgraph.png" alt="" style="height: auto;width: 100%">
+                                                <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
+                                                <img class="detailtag" src="image/dashbroad/detailhover.png" alt=""></div>
+
+
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4" style="margin:10px 0;">
+                            <div class="strategybox h-100">
+                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">個人簡介</h5>
+                                <P>畢業於臺灣師範大學電機工程學系。曾拿下多次海內外交比賽冠軍，並擔任香港金融數據公司操盤手。<br> 有相當豐富實單及程式交易的經驗，並深入研究演算法及機器學習應用於股市模型。
+                                </P>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" style="margin:10px 0;">
+                            <div class="strategybox  h-100">
+                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略列表<span style="position: absolute;right:30px;color: #6B6B6B;"><span>◄</span><span>►</span></span>
+                                </h5>
+                                <table class="strategytable2">
+                                    <thead>
+                                        <th>策略名稱</th>
+                                        <th>總收益</th>
+                                        <th>最大回檔</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>嘎瑪糧食大戶指標策略1</td>
+                                            <td style="color: #F8777D;">+29.6</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>嘎瑪糧食大戶指標策略2</td>
+                                            <td style="color: #F8777D;">+29.6</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>嘎瑪糧食大戶指標策略3</td>
+                                            <td style="color: #F8777D;">+29.6</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>嘎瑪糧食大戶指標策略4</td>
+                                            <td style="color:#4DCA0A;">-29.6</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>嘎瑪糧食大戶指標策略5</td>
+                                            <td style="color: #F8777D;">+29.6</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>嘎瑪糧食大戶指標策略6</td>
+                                            <td style="color: #F8777D;">+29.6</td>
+                                            <td>10%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4" style="margin:10px 0;">
+                            <div class="strategybox  h-100">
+                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">平均策略績效</h5>
 
+                                <p style=" color:#A1B0C6;width:100%;text-align: end;right: 10px;"><button class="btn timetag">1月</button>
+                                    <button class="btn timetag active" aria-pressed="true">3月</button>
+                                    <button class="btn timetag">6月</button>
+                                    <button class="btn timetag">1年</button>
+                                    <button class="btn timetag">全部</button><span style="display: inline-block;">
+                                                             </p>
+                                <div class="col">
+                                    <img src="image/dashbroad/line_326x201.png" alt="" style="height: auto;width: 100%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 order-lg-2" style="margin:10px 0;">
+                            <div class="strategybox  h-100">
+                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">評分</h5>
+                                <div class="col" style="padding: 10px;">
+                                    <div class="row align-items-center">
+                                        <h1 style="color:#F8777D;margin: 0 5px 0 auto;">4.7</h1>
+                                        <h4 style="color:#F8777D;margin: 0 auto 0 0;">★★★★★</h4>
+                                     </div>
+                                    
+                                    <div class="col">
+                                        <div class="row align-items-center">
+                                            <text>5</text>
+                                            <div class="col">
+                                                    <div class="bar">
+                                                            <div class="bar-active" style="width: 80%;"></div>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                                <text>4</text>
+                                                <div class="col">
+                                                        <div class="bar">
+                                                                <div class="bar-active" style="width: 10%;"></div>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center">
+                                                    <text>3</text>
+                                                    <div class="col">
+                                                            <div class="bar">
+                                                                    <div class="bar-active" style="width: 5%;"></div>
+                                                                </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row align-items-center">
+                                                        <text>2</text>
+                                                        <div class="col">
+                                                                <div class="bar">
+                                                                        <div class="bar-active" style="width: 5%;"></div>
+                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row align-items-center">
+                                                            <text>1</text>
+                                                            <div class="col">
+                                                                    <div class="bar">
+                                                                            <div class="bar-active" style="width: 0%;"></div>
+                                                                        </div>
+                                                            </div>
+                                                        </div>
+                                    </div>
+                                    <p style="text-align:end;">932人評論</p>
+                               </div>
+                           </div>
+
+                    
+                        </div>
+                        <div class="col-lg-8 order-lg-1" style="margin:10px 0">
+                                <div class="strategybox h-100">
+                                        <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">撰寫評論</h5>
+                                        <div class="row align-items-center">
+                                            <text style="color: #A1B0C6;margin-right: 10px">我想評分</text>
+                                            <div class="empty-star"></div>
+                                            <div class="empty-star"></div>
+                                            <div class="empty-star"></div>
+                                            <div class="empty-star"></div>
+                                            <div class="empty-star"></div>
+                                        </div>
+                                        <div class="row align-items-center"><text style="color: #A1B0C6;margin-right: 10px;">我有的策略</text>
+                                            <input type="checkbox" name="strategy" value="1"><text>嘎瑪糧食大戶指標策略</text>
+                                        </div>
+                                        <div class="row">
+                                                <text style="color: #A1B0C6;margin-right: 10px">我想說</text>
+                                        </div>        
+                                        <div class="row">
+                                                    <div class="col">
+                                                        <textarea type="text" class="form-control" id="message" placeholder="留下您的評論" style="margin-top: 5px;height: 8rem;line-height: 1rem;;font-size: 0.8rem;"></textarea>
+                                                    </div>
+                                                <button class="btn btn-default btn-message" style="height: 2.5rem;">送出</button>
+                                            </div>            
+                                        </div>
+                          </div>
+                        <div class="col-12 order-last" style="margin:10px 0">
+                            <div class="strategybox h-100">
+                                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">評論</h5>
+                                <div class="row" style="margin:20px 0">
+                                    <div class="col-6">
+                                        <button class="btn-block btn-messageboard active" type="button" >
+                                            作者評分與評論
+                                        </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button class="btn-block btn-messageboard" type="button">
+                                            作者的策略評論
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center borderb" style="padding:10px 0;">
+                                <span class="userphoto-s"></span>
+                                    <div class="col">
+                                        <h6 style="color:#0D1B46">陳開根 <text style="color:#A1B0C6">★★★★☆</text><text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
+                                        <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 我相信你哦，最好不要讓我失望！</h6>
+                                    </div>
+                            </div>
+                            <div class="row align-items-center borderb" style="padding:10px 0;">
+                                <span class="userphoto-s"></span>
+                                <div class="col">
+                                    <h6 style="color:#0D1B46">大明 <text style="color:#A1B0C6">★★★★★</text><text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
+                                    <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 自從使用了這個策略後，我每次考試都一百分！</h6>
+                                </div>
+                                <div class="w-100"></div>
+                                <span class="userphoto-s" style="margin-left: 70px;"></span>
+                                <div class="col">
+                                    <h6 style="color:#0D1B46">劉重慶<text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
+                                    <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 我是不曉得為什麼你連留言都要抄就是了</h6>
+                                </div>
+
+                            </div>
+                            <div class="row align-items-center borderb" style="padding:10px 0;">
+                                <span class="userphoto-s"></span>
+                                <div class="col">
+                                    <h6 style="color:#0D1B46">阿美 <text style="color:#A1B0C6">★★★★★</text><text style="font-size: 0.8rem;color: #CDCDCD;float: right;">Sep. 12</text></h6>
+                                    <h6><a href="#" style="color:#65BCBF">#嘎瑪糧食大戶指標策略1</a> 自從使用了這個策略後，我每次考試都一百分！</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
         </div>
+    </div>
+    </div>
     </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -899,31 +1584,8 @@
         })
     </script>
 
-    <script>
-        const detailgraph = Array.from(document.getElementsByClassName("detailgraph"));
-        const detailtag = Array.from(document.getElementsByClassName("detailtag"));
 
-        function show(detailtag) {
-            detailtag.className += " active";
-        }
-
-        function showoff(detailtag) {
-            detailtag.className = "detailtag"
-        }
-
-        detailgraph.forEach(function(t) {
-            t.addEventListener('mouseover', (t) => {
-                detailtag.forEach(function(f) {
-                    show(f);
-                })
-            })
-            t.addEventListener('mouseout', () => {
-                detailtag.forEach(function(f) {
-                    showoff(f);
-                })
-            })
-        })
-    </script>
+    <script src="js/strategyfilter.js"></script>
 </body>
 
 </html>

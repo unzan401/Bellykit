@@ -1,19 +1,18 @@
 var more = document.getElementsByClassName("morestrategy")[0];
 $("#morearrow").on("click", function() {
-    if (more.className === "morestrategy") {
-        more.className += (" active");
-        $("#morearrow").html("▲");
-    } else {
-        more.className = "morestrategy";
-        $("#morearrow").html("▼");
-    }
-    setTimeout(function() {
-        more.className = "morestrategy";
-        $("#morearrow").html("▼");
-    }, 30000);
-})
-
-// <!-- 控制strategy detail -->
+        if (more.className === "morestrategy") {
+            more.className += (" active");
+            $("#morearrow").html("▲");
+        } else {
+            more.className = "morestrategy";
+            $("#morearrow").html("▼");
+        }
+        setTimeout(function() {
+            more.className = "morestrategy";
+            $("#morearrow").html("▼");
+        }, 30000);
+    })
+    // <!-- 控制strategy detail -->
 
 let detailnum = 0;
 

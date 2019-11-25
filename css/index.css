@@ -242,24 +242,23 @@ body {
 
 .star {
     background-image: url("../image/star.png");
-    width: 11px;
-    height: 11px;
-    background-size: 11px 11px;
-    background-repeat: no-repeat;
 }
 
 .half-star {
     background-image: url("../image/halfstar.png");
-    width: 11px;
-    height: 11px;
-    background-size: 11px 11px;
 }
 
 .empty-star {
     background-image: url("../image/emptystar.png");
-    width: 11px;
-    height: 11px;
-    background-size: 11px 11px;
+}
+
+.star,
+.half-star,
+.empty-star {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
 }
 
 .strategy-number h2 {
@@ -269,8 +268,6 @@ body {
 .strategy-max {
     font-size: 16px;
 }
-
-.strategy-graph {}
 
 .strategy-buttons {
     position: absolute;
@@ -322,4 +319,35 @@ body {
     height: 45px;
     background-color: #EEEEEE;
     margin: 10px;
+}
+
+.bar,
+.bar-active {
+    border-radius: 3px;
+    height: 7px;
+}
+
+.bar {
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+.bar-active {
+    background-color: #A1B0C6;
+}
+
+.btn-messageboard {
+    border: #65BCBF 1px solid;
+    background-color: #FFF;
+    color: #65BCBF;
+    border-radius: 5px;
+}
+
+.btn-messageboard.active {
+    background-color: #65BCBF;
+    color: #FFF;
+}
+
+.btn-messageboard:hover {
+    background-color: rgba(101, 188, 191, 0.61);
 }
