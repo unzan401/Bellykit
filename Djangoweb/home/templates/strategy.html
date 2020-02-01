@@ -4,9 +4,6 @@
     <div class="row" style="margin-top: 20px;">
         <div class="col-xl-5 col-md-6" style="margin:10px 0;">
             <h3>{{ strategy_id }}</h3>
-            <a href='{% static "#" class="strategy-tag" %}'># 小資</a>
-            <a href='{% static "#" class="strategy-tag" %}'># 大戶指標</a>
-            <a href='{% static "#" class="strategy-tag" %}'># 長期</a>
         </div>
         <div class="col-xl-7 col-md-6" style="margin:10px 0;;">
             <h6>累積報酬率</h6>
@@ -15,14 +12,14 @@
                 {{ ROI }}</h1>
             <text style="margin-left:30px ;">(最近12個月)</text>
         </div>
-        <div class="col-md-6 col-lg-4" style="margin:10px 0;">
+        <div class="col-md-12 col-lg-4 order-lg-1" style="margin:10px 0;">
             <div class="strategybox h-100">
                 <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略簡介</h5>
                 <p style="margin: 10px;">{{ simple_introduction }}</p>
             </div>
 
         </div>
-        <div class="col-md-6 col-lg-4" style="margin:10px 0;">
+        <div class="col-md-6 col-lg-4 order-lg-2" style="margin:10px 0;">
             <div class="strategybox  h-100">
                 <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略基本資料</h5>
                 <div class="row sausage">
@@ -68,52 +65,50 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-lg-4" style="margin:10px 0;">
+        <div class="col-md-6 col-lg-4 order-lg-3" style="margin:10px 0;">
             <div class="strategybox h-100">
-                <div class="strategybox h-100">
-                    <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略能力值</h5>
-                    <table class="strategytable" style="width: 100%;">
-                        <thead>
-                            <th></th>
-                            <th>
-                                <div style="display: inline-block; border-radius: 5px; width:2.5rem;color: #FFFFFF;background-color: #F8777D; padding:2px 5px;">上線</div>
-                            </th>
-                            <th>
-                                <div style="display: inline-block;border-radius: 5px; width:2.5rem;color: #FFFFFF;background-color: #F8777D; padding:2px 5px">回測</div>
-                            </th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="tl">勝率</td>
-                                <td>{{ online_win_rate }}</td>
-                                <td>{{ backtest_win_rate }}</td>
-                            </tr>
-                            <tr>
-                                <td class="tl">進場交易頻率</td>
-                                <td>{{ online_frequency }}</td>
-                                <td>{{ backtest_frequency }}</td>
-                            </tr>
-                            <tr>
-                                <td class="tl">最大連續虧損次數</td>
-                                <td>{{ online_MDD_times }}</td>
-                                <td>{{ backtest_MDD_times }}</td>
-                            </tr>
-                            <tr>
-                                <td class="tl">風險報酬比</td>
-                                <td>{{ online_return_risk_ratio }}</td>
-                                <td>{{ return_risk_ratio }}</td>
-                            </tr>
-                            <tr>
-                                <td class="tl">夏普比率</td>
-                                <td>{{ online_sharpe_ratio }}</td>
-                                <td>{{ backtest_sharpe_ratio }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略能力值</h5>
+                <table class="strategytable" style="width: 100%;">
+                    <thead>
+                        <th></th>
+                        <th>
+                            <div style="display: inline-block; border-radius: 5px; width:2.5rem;color: #FFFFFF;background-color: #F8777D; padding:2px 5px;">上線</div>
+                        </th>
+                        <th>
+                            <div style="display: inline-block;border-radius: 5px; width:2.5rem;color: #FFFFFF;background-color: #F8777D; padding:2px 5px">回測</div>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tl">勝率</td>
+                            <td>{{ online_win_rate }}</td>
+                            <td>{{ backtest_win_rate }}</td>
+                        </tr>
+                        <tr>
+                            <td class="tl">進場交易頻率</td>
+                            <td>{{ online_frequency }}</td>
+                            <td>{{ backtest_frequency }}</td>
+                        </tr>
+                        <tr>
+                            <td class="tl">最大連續虧損次數</td>
+                            <td>{{ online_MDD_times }}</td>
+                            <td>{{ backtest_MDD_times }}</td>
+                        </tr>
+                        <tr>
+                            <td class="tl">風險報酬比</td>
+                            <td>{{ online_return_risk_ratio }}</td>
+                            <td>{{ return_risk_ratio }}</td>
+                        </tr>
+                        <tr>
+                            <td class="tl">夏普比率</td>
+                            <td>{{ online_sharpe_ratio }}</td>
+                            <td>{{ backtest_sharpe_ratio }}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div class="col-lg-8" style="margin:20px 0">
+        <div class="col-lg-8 order-lg-4" style="margin:10px 0">
             <div class="strategybox h-100">
                 <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">目前持股</h5>
                 <!-- 加更新時間 -->
@@ -138,8 +133,9 @@
                 </table>
 
             </div>
-        </div>
-        <div class="col-md-6 col-lg-4" style="margin:20px 0">
+        </div>        
+
+        <div class="col-12 col-lg-4 order-lg-5" style="margin:10px 0">
             <div class="strategybox h-100">
                 <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">預計購買</h5>
                 <table class="strategytable2">
@@ -161,7 +157,10 @@
                 </table>
             </div>
         </div>
-        <div class="col-12" style="margin:10px 0">
+
+
+
+        <div class="col-12 order-lg-6" style="margin:10px 0">
             <div class="strategybox h-100">
                 <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">損益圖</h5>
                 <p style=" color:#A1B0C6;width:100%"><button class="btn timetag">1月</button>
@@ -178,14 +177,7 @@
                     <img class="detailtag" src='{% static "image/dashbroad/detailhover.png" %}' alt=""></div>
             </div>
         </div>
-
-        <div class="col-md-6 col-lg-4 order-lg-2" style="margin:20px 0;">
-            <div class="strategybox h-100">
-                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略操作方式</h5>
-                <p style="margin: 10px;">{{ how_to_use }}</p>
-            </div>
-        </div>
-        <div class="col-lg-8 order-lg-1" style="margin:20px 0">
+        <div class="col-lg-8 order-lg-8" style="margin:10px 0">
             <div class="strategybox h-100">
                 <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">歷史觀察名單</h5>
                 <!-- 要記得寫箭頭 -->
@@ -210,13 +202,20 @@
             </div>
 
         </div>
-        <div class="col-12 order-last" style="margin:20px 0">
+
+        <div class="col-12 col-lg-4 order-lg-9" style="margin:10px 0;">
+            <div class="strategybox h-100">
+                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">策略操作方式</h5>
+                <p style="margin: 10px;">{{ how_to_use }}</p>
+            </div>
+        </div>
+        <div class="col-12 order-last" style="margin:10px 0">
             <div class="strategybox h-100">
                 <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">詳細介紹</h5>
                 <p style="margin: 10px;">{{ introduction }}</p>
             </div>
         </div>
-        <div class="col-12 order-last" style="margin:20px 0">
+        <div class="col-12 order-last" style="margin:10px 0">
             <div class="strategybox h-100">
                 <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">評論</h5>
                 <!-- 要加刪除、編輯、回覆功能 -->
@@ -249,28 +248,6 @@
     </div>
 
 </div>
-<!-- Bootstrap core JavaScript -->
-<script src='{% static "vendor/jquery/jquery.min.js" %}'></script>
-<script src='{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}'></script>
-<script>
-    $(window).on('load', function() {
-        $('#loading').fadeOut(1000);
-    });
-</script>
-
-<script>
-    $("#sidebarbtn").on("click", function() {
-        $(".sidebar").toggleClass("active");
-    })
-</script>
-<script>
-    $(".regard").on("mouseover", function() {
-        $(".regard-detail").attr("class", "regard-detail active");
-    })
-    $(".regard").on("mouseout", function() {
-        $(".regard-detail").attr("class", "regard-detail");
-    })
-</script>
 
 <script>
     const detailgraph = Array.from(document.getElementsByClassName("detailgraph"));
