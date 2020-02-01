@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bellykit投資策略平台</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    {% block navbar %}
+    <nav class="navbar navbar-expand-md navbar-light bg-test fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="image/bellykitlogo.png" height="40px"><img src="image/bellykitlogo2.png" height="32px" style="margin-left:30px"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">策略</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">方案</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="logintext" href="#login">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% endblock navbar %}
+
+    {% block content %}
+      
+    {% endblock content %}
+    <!--    __        -->
+    <!--  > . )_      -->
+    <!-- ~ (_____>  ~ -->
+    <!--  ~   ~  ~  ~ -->
+
+    {% block footer %}
+    <footer class="py-5" style="background-color:#0d1b46 ;">
+        <div class="container">
+            <div class="row footer-menu justify-content-center">
+                <ul>
+                    <li> <a href="#" title="關於Bellykit">關於Bellykit</a> </li>
+                    <li> <a href="#" title="法律聲明">法律聲明</a> </li>
+                    <li> <a href="tos.html" title="服務條款">服務條款</a> </li>
+                    <li> <a href="#" title="聯絡Bellykit">聯絡Bellykit</a> </li>
+                    <li> <a href="#" title="Facebook">Facebook</a> </li>
+                </ul>
+            </div>
+
+            <p class="m-0 text-center text-white">Copyright &copy; 倍利金融科技公司 Since 2019</p>
+            <p class="text-center text-white" style="font-size:0.8rem">本系統為雲端化的策略開發平台，所有策略由用戶自行開發與使用，不做任何投資理財建議，請投資者謹慎使用。</p>
+        </div>
+    </footer>
+    {% endblock footer %}
+        <!-- Footer -->
+
+</body>
+
