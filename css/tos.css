@@ -1,0 +1,12 @@
+.tos {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+li.tos-text {
+    margin-bottom: 1rem;
+}
+
+li h6 {
+    font-weight: 700;
+}
