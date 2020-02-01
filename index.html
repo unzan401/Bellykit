@@ -1,11 +1,9 @@
-{% extends "base_generic.html" %}
-
-{% block content %}
+{% extends "base_generic.html" %} {% block content %}
 <header>
     <!-- <div class="container-fiuld" style="margin-top:-150px">
         <div class=" row justify-content-center" style="background-image:url(index-1.jpg);height:1050px ;">
             <div style="background-color:rgba(222,245,234,0.5);height:250px;width:375px;margin-top:80px ;">
-                <h4 style="margin: 20px"><img src="image/dashbroad/eatmeat.png" width="60px" height="60px" alt="logo">Bellykit投資策略平台</h4>
+                <h4 style="margin: 20px"><img src='{% static "image/dashbroad/eatmeat.png" %}' width="60px" height="60px" alt="logo">Bellykit投資策略平台</h4>
                 <h3>把握每個吃肉的瞬間！</h3>
                 <button style="margin: 20px;" id="註冊1">立刻加入！</button>
             </div>
@@ -14,9 +12,9 @@
     英雄榜 -->
     <div class="container-fiuld" style="background-color:#EEEEEE;">
         <div class=row style="min-height: 350px;;position: relative;">
-            <img src="image/index0.png" alt="" style="min-width: 300px;width:65%;position: absolute;right:0">
-            <img src="image/text.png" alt="" style="min-width:280px;width:35%;position:absolute;left:23%;top: 30vmin;">
-            <img src="image/item0.png" alt="" style="margin-top:50vmin;min-width:230px;min-height:138px;height:15vw;width:24.4vw ;">
+            <img src='{% static "image/index0.png" %}' alt="" style="min-width: 300px;width:65%;position: absolute;right:0">
+            <img src='{% static "image/text.png" %}' alt="" style="min-width:280px;width:35%;position:absolute;left:23%;top: 30vmin;">
+            <img src='{% static "image/item0.png" %}' alt="" style="margin-top:50vmin;min-width:230px;min-height:138px;height:15vw;width:24.4vw ;">
         </div>
     </div>
 
@@ -27,17 +25,17 @@
                 <div class="row" style="max-width: 1400px;width: 100%; ;">
                     <div class="col-4">
                         <div class="row justify-content-center">
-                            <img src="image/index-2-3.png" alt="" style="height:65.6%;width: 53.2%;margin-top:2vw">
+                            <img src='{% static "image/index-2-3.png" %}' alt="" style="height:65.6%;width: 53.2%;margin-top:2vw">
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="row justify-content-center">
-                            <img src="image/index-2-2.png" alt="" style="height:71%;width: 76.7%">
+                            <img src='{% static "image/index-2-2.png" %}' alt="" style="height:71%;width: 76.7%">
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="row justify-content-center">
-                            <img src="image/index-2-1.png" alt="" style="height: 77.3%;;width: 52.4%;margin-top:3vw">
+                            <img src='{% static "image/index-2-1.png" %}' alt="" style="height: 77.3%;;width: 52.4%;margin-top:3vw">
                         </div>
                     </div>
                 </div>
@@ -66,15 +64,15 @@
     <div class="container-fiuld" style="background-color: #EEEEEE; margin-top:50px">
         <div class="row" style="min-height:600px;position: relative;">
             <div class="col-xs-12 col-sm-6">
-                <img src="image/index-3.png" alt="city" style="position: absolute;left:0; width: 52vw;min-width: 300px;">
+                <img src='{% static "image/index-3.png" %}' alt="city" style="position: absolute;left:0; width: 52vw;min-width: 300px;">
             </div>
             <div class="col-xs-12 col-sm-6 justify-content-left" style="margin-top:50vh;">
                 <h3 class="index-text" style="font-style:inherit;">Bellykit是什麼？</h3>
                 <div class="container" style="width:80%;max-width: 440px;margin-top:50px">
-                    <img src="image/item2.png" alt="common" height="37px">
+                    <img src='{% static "image/item2.png" %}' alt="common" height="37px">
                     <h5 class="index-text" style="width:100%;text-align: left;margin:-37px 0 0 40px">一個投資策略開發者積極研發策略，並給予一般人輕鬆完成程式交易的策略平台。</h5>
 
-                    <img src="image/item1.png" alt="common" height="27px" style="margin:60px 0 0 -30px;transform:rotate(-30deg)">
+                    <img src='{% static "image/item1.png" %}' alt="common" height="27px" style="margin:60px 0 0 -30px;transform:rotate(-30deg)">
                     <h5 class="index-text" style="width:100%;text-align: left;margin:-37px 0 0 40px">無須具備寫程式的能力，就從眾多優秀策略中，點擊滑鼠挑選適合自己的投資策略。</h5>
                 </div>
             </div>
@@ -85,7 +83,7 @@
 
     <div class="container-fiuld" style="background-color: #EEEEEE;">
         <div class="row" style="min-height:1000px;position: relative;">
-            <img src="image/index-4.png" alt="meat" style="position: absolute;right:0; top:60px; width: 38vw;">
+            <img src='{% static "image/index-4.png" %}' alt="meat" style="position: absolute;right:0; top:60px; width: 38vw;">
             <div class="container">
                 <div class="row align-items-center" style="position: relative;margin-top:25vmin; background-color:white;min-height: 300px;;box-shadow: 2px 2px 2px 2px #cccccc">
                     <div class="col-4">
@@ -96,36 +94,36 @@
                         </h5>
                     </div>
                 </div>
-                <img src="image/item3.png" alt="meats" width="40%" style="min-width:300px ;float:right;margin-top:-10px">
+                <img src='{% static "image/item3.png" %}' alt="meats" width="40%" style="min-width:300px ;float:right;margin-top:-10px">
                 <h3 class="index-text" style="text-align:left; font-style:inherit;margin:200px 0 0 50px">為什麼能輕鬆獲利？</h4>
 
                     <div class="container" style="float:left ;margin-top:40px;width:48vw">
-                        <img src="image/item5.png" alt="common" height="35px" style="margin:10px 0 0 10px;">
+                        <img src='{% static "image/item5.png" %}' alt="common" height="35px" style="margin:10px 0 0 10px;">
                         <h5 class="index-text" style="min-width:250px;text-align: left;margin:-37px 0 0 80px">Bellykit 找到志同道合的夥伴們，分享其精心研究的投資策略，讓有心進入投資市場的新手們也能 Belly out the pocket！</h5>
-                        <img src="image/item4.png" alt="common" height="35px" style="margin:50px 0 0 0px;">
+                        <img src='{% static "image/item4.png" %}' alt="common" height="35px" style="margin:50px 0 0 0px;">
                         <h5 class="index-text" style="min-width:250px;text-align: left;margin:-37px 0 0 80px">優秀的投資策略能在平台間脫穎而出，無法獲利的策略會循市場機制淘汰，平台上的策略會不斷演化，創造更多獲利機會。</h5>
                     </div>
-                    <img src="image/bellykit.gif" alt="wave" width="30%" style="float:right;min-width:300px;">
+                    <img src='{% static "image/bellykit.gif" %}' alt="wave" width="30%" style="float:right;min-width:300px;">
             </div>
         </div>
     </div>
 
     <div class="container-fiuld" style="background-color: #EEEEEE;">
         <div class="row" style="position: relative;">
-            <img src="image/index-5.png" alt="meat" style="position:absolute;height:24vw;width: 24vw;">
+            <img src='{% static "image/index-5.png" %}' alt="meat" style="position:absolute;height:24vw;width: 24vw;">
             <div class="container">
                 <div class="col-12">
                     <h1 class="index-text" style="font-size:2rem;margin:12vw 0 50px 0">Bellykit的使命<br></h1>
                     <h5 class="index-text">集結眾人策略智慧，擁抱市場投資收益。<br>為平台使用者及策略開發者構築前所未有的共榮城市。</h5>
                 </div>
             </div>
-            <img src="image/item6.png" alt="city" style="margin-top:50px; height:41.25vw; width:100vw">
+            <img src='{% static "image/item6.png" %}' alt="city" style="margin-top:50px; height:41.25vw; width:100vw">
         </div>
     </div>
 
     <div class="container-fiuld bg-white" style="margin-top:-10px">
         <div class="row justify-content-center" style="margin-bottom:100px ;">
-            <img src="image/item7.png" alt="Bigface" style="height: 20vw;width: 43vw;min-height:140px; min-width: 300px;">
+            <img src='{% static "image/item7.png" %}' alt="Bigface" style="height: 20vw;width: 43vw;min-height:140px; min-width: 300px;">
         </div>
         <h1 class="index-text" id="register" style="margin:0 0 30px 0">即刻加入我們！把握每個吃肉的瞬間！</h1>
         <h5 class="index-text">Belly out your pocket!</h5>
@@ -139,13 +137,13 @@
                         <input type="password" placeholder="密碼" id="userpassword" class="form-control" style="margin:15px 0">
                         <input type="password" placeholder="確認密碼" id="usercheckpassword" class="form-control" style="margin:15px 0">
                         <input type="checkbox" id="confirm" style="margin:15px 10px 0 30px;width:20px;height:20px;">
-                        <label for="confirm" style="text-align: center;color:#555555">同意本站<a href="tos.html" target="_blank">使用者條款</a></label>
+                        <label for="confirm" style="text-align: center;color:#555555">同意本站<a href='{% static "tos.html" %}' target="_blank">使用者條款</a></label>
                         <button class="btn btn-success" type="submit" style="width:100%;margin:15px 0">建立帳戶</button>
                     </div>
                 </div>
                 <div class="col-sm-6 order-sm-1 col-xs-12 justify-content-center align-items-center">
-                    <button class="btn btn-outline-secondary btn-square" id="facebooklog" style="width:100%;margin:15px 5px"><img src="image/facebook.png" alt="facebook" style="height: 25px;margin-right: 10px;">Facebook</button>
-                    <button class="btn btn-outline-secondary btn-square" id="googlelog" style="width:100%;margin:15px 5px 30px 5px"><img src="image/google.png" alt="google" style="height: 25px;margin-right: 10px;">Google</button>
+                    <button class="btn btn-outline-secondary btn-square" id="facebooklog" style="width:100%;margin:15px 5px"><img src='{% static "image/facebook.png" %}' alt="facebook" style="height: 25px;margin-right: 10px;">Facebook</button>
+                    <button class="btn btn-outline-secondary btn-square" id="googlelog" style="width:100%;margin:15px 5px 30px 5px"><img src='{% static "image/google.png" %}' alt="google" style="height: 25px;margin-right: 10px;">Google</button>
                 </div>
             </div>
         </div>
@@ -191,4 +189,3 @@
     </script>
 </header>
 {% endblock content %}
-
