@@ -1,47 +1,166 @@
-{% extends "base_generic.html" %} {% block content %}
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
 
-<link href='{% static "css/tos.css" %}' rel="stylesheet">
-<div class="container tos">
-    <h1 class="index-test text-center">
-        使用者條款
-    </h1>
-    <p class="tos-text" style="margin-top:20px;">
-        歡迎您來到倍利金融科技Bellykit（以下稱本網站），當您使用本網站時，即表示您已閱讀、瞭解並同意接受本網站所有聲明之內容，包含服務條款、著作權聲明、免責聲明、隱私權暨個人資料保護聲明(以下合稱本網聲明)。如本網聲明經任何修改或變更後，您仍繼續使用本網站，也視為您已閱讀、瞭解並同意接受該等修改或變更。
-    </p>
-    <ol>
-        <li class="tos-text">
-            <h6>網站使用規則</h6>
-            有關現有或將來之各項使用均受本服務條款之規範。 使用者在使用過程中，必須遵循以下原則，否則倍利金融科技Bellykit（以下稱本公司）有權不經通知逕行暫停、取消或終止全部或部分服務： 遵守當地有關的法律和法規。 不得為任何非法目的而使用。 遵守所有與網路服務有關的網路協定、規定。 不得利用本網站服務系統進行任何不利於本網站的行為。 不得於未經本公司授權即轉載本網站之任何內容。 不得利用本網站之任何資訊進行營利行為。 如發現任何非法使用情況，應立即通告本網站。
-        </li>
-        <li class="tos-text">
-            <h6>有關廣告</h6>
-            本網站所傳播或刊載之廣告，關於其內容所展現的文字、圖片、動畫、聲音、影像或以其他方式對商品或服務之說明，都是由廣告主或廣告代理商所提供，對於廣告之內容，本網站基於尊重廣告主或廣告代理商權利，不對廣告之內容進行審查。您應該自行判斷該廣告的正確性及可信度，本網站不對廣告做任何擔保責任。 本網站隨時會與其他公司、廠商等第三人（以下稱內容提供者）合作，由其提供包括新聞、訊息、電子報、eDM等不同內容供本網站刊登，本網站於刊登時均將註明內容提供者。基於尊重內容提供者之智慧財產權，本網站對其所提供之內容並不做實質之審查或修改，對該等內容之正確真偽亦不負任何責任。
-            本網站主要收入來自廣告主的贊助，讓我們能夠持續提供高品質的全球金融資訊與服務，凡經註冊成為本網站會員後，即視為同意接收本網站所發出之會員電子報及EDM廣告訊息。
-        </li>
-        <li class="tos-text">
-            <h6>網站服務暫停、中斷或終止</h6>
-            本網站於下列情形之一時，有權隨時暫停、中斷或終止服務之全部或一部，對於使用者不負擔任何賠償責任： 對於本網站相關系統設備進行遷移、更換或升級維護時。 因不可抗力所造成服務停止或中斷。 因其他原因所造成服務停止或中斷
-        </li>
-        <li class="tos-text">
-            <h6>與第三人網站之連結</h6>
-            本網站連結之搜尋引擎及地圖服務，僅在提供使用者方便且迅速查詢到使用者想要的資訊，您所查到的資料是使用搜尋引擎之結果，不代表本網站與連結網站之業者有任何合作關係。如您因到達該網站而產生之糾紛或損害，請您逕行與該網站之業者聯絡，本網站不負任何責任。
-        </li>
-        <li class="tos-text">
-            <h6>違約賠償</h6>
-            使用者同意保障和維護本網站及其他第三人之權益，如因違反有關法律、法規或本服務條款中的任何條款，而對本網站或任何第三人造成損失，使用者同意承擔由此造成的損害賠償責任。
-        </li>
-        <li class="tos-text">
-            <h6>服務聲明之增訂及修改</h6>
-            本網站聲明之條款如有增訂或修改，您同意自該修訂條款於本網站公告之時起受其拘束，本網站將不個別通知。如您於公告後繼續使用本網站，則視為您已經同意該修訂條款。
-        </li>
-        <li class="tos-text">
-            <h6>準據法及管轄法院</h6>
-            關於本服務條款之解釋或適用，以中華民國之法律為準據法。 使用者因使用本網站而生之爭議，同意本誠信原則解決之，如訴訟之必要時，同意以台灣台北地方法院為第一審管轄法院。
-        </li>
-        <li class="tos-text">
-            <h6>其他規定</h6>
-            如本服務條款無論因何種原因完全或部分無效或不具有執行力，本服務條款的其餘條款仍應有效並且有約束力。 本服務條款中的各項標題僅為方便理解而設，在實際解釋本條款各項約定內容時，仍應以各項約定內容之文字為主，不受標題影響。
-        </li>
-    </ol>
-</div>
-{% endblock content %}
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bellykit投資策略平台</title>
+    <script src="js/login.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+
+
+</head>
+
+
+<body onscroll=scrolldown() onload="checkCookie()">
+    <!-- 登入頁面 -->
+    <div id="login" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="row justify-content-center" style="margin-top:40px">
+                <img src="image/bellykitlogo.png" height="40px">
+                <img src="image/bellykitlogo2.png" height="36px" style="margin-left:20px">
+            </div>
+            <h1 class="index-test text-center" style="margin:30px">登入</h1>
+            <div class="form-group">
+                <input type="email" placeholder="email" value="test@bellykit.com" id="loginemail" class="form-control" style="margin:15px 0">
+                <input type="password" placeholder="密碼" value="123" id="loginpassword" class="form-control" style="margin:15px 0">
+                <button class="btn btn-success" onclick=login() type="submit" style="width:100%;margin:15px 0">登入</button>
+                <a href="index.html#register">
+                    <p style="text-align:right;margin-bottom:5px">即刻註冊</p>
+                </a>
+                <a href="#">
+                    <p style="text-align:right">忘記密碼</p>
+                </a>
+                <div style="width:100%;height:1px; background:#BBBBBB;"></div>
+                <div class="row justify-content-center">
+                    <p class="index-test text-center" style="margin-top:-15px;background-color: #FFFFFF;width: 40pt;">或是</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <button class="btn btn-outline-secondary btn-square" id="facebooklog" style="width:45%;margin:0 5px;"><img src="image/facebook.png" alt="facebook" style="height: 25px;margin:0 5px;">Facebook</button>
+                    <button class="btn btn-outline-secondary btn-square" id="googlelog" style="width:45%;margin:0 5px;"><img src="image/google.png" alt="google" style="height: 25px;margin:0 5px;">Google</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登入頁面end -->
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="image/bellykitlogo.png" height="40px"><img src="image/bellykitlogo2.png" height="32px" style="margin-left:30px"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">策略</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">方案</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="logintext" href="#login">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <h1 class="index-test text-center">
+            使用者條款
+        </h1>
+        <p class="index-test" style="margin-top:20px;">
+            歡迎您使用Bellykit（以下簡稱「本產品服務」），為維護您的權益，請閱讀以下條款，使用者視為同意以下本產品服務各項條款：
+        </p>
+        <ol>
+            <li class="index-test">如遇系統問題，歡迎使用線上回報系統給予本產品服務批評與指教。</li>
+            <li class="index-test">本產品服務將持續升級改善系統功能與用戶體驗。</li>
+            <li class="index-test">本產品服務所提供之所有資訊及軟體及其相關功能目的為提供資訊及系統服務應用，非供交易或投資之目的，透過本產品服務獲得之資料僅作為參考，非供使用者之投資買賣建議，基於前開資料之任何交易或投資行為，其餘本產品服務上所提供之建議及資料內容，包括使用者之間在本產品服務上所自行衍生的相關資料等，均不得作為任何交易行為之依據，使用者運用本產品服務進行任何投資行為所產生之風險及盈虧，均需完全自行負擔，本產品服務不對使用者之投資決策負任何責任。</li>
+            <li class="index-test">本產品服務及其資料提供者、合作結盟廠商與相關電信業者網路系統因硬體設備之故障、失靈或人為操作上之疏失導致傳輸無法使用、遲延、或造成任何資料內容（包括文字、數字、圖片、聲音、影像）遺失中斷、暫時、缺漏、更新延誤或儲存上之錯誤，即本產品服務之功能可能因各項不可抗力之因素導致功能無法正常運行，請用戶們謹慎使用，本產品服務均不負任何責任。</li>
+            <li class="index-test">本產品服務提供的任何商品、促銷資訊及廣告，本平台均不對其交易安全、商品及服務內容負任何擔保責任，其間之所有交易、擔保、賠償責任及售後服務皆係存在於使用者與商品或勞務提供者之間，使用者應事先詳讀各項相關規範與活動說明，交易期間如因商品或服務提供者發生任何變故或產生糾紛，本產品服務不負任何責任。</li>
+            <li class="index-test">本產品服務中之所有鏈結可能連結到其他個人、公司或組織之網站，對被鏈結之該等個人、公司或組織之網站上所提供之產品、服務或資訊，本產品服務概不擔保其真實性、即時性、正確性及完整性。</li>
+        </ol>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color:#0d1b46 ;">
+        <div class="container">
+            <div class="row footer-menu justify-content-center">
+                <ul>
+                    <li> <a href="#" title="關於Bellykit">關於Bellykit</a> </li>
+                    <li> <a href="#" title="法律聲明">法律聲明</a> </li>
+                    <li> <a href="tos.html" title="服務條款">服務條款</a> </li>
+                    <li> <a href="#" title="聯絡Bellykit">聯絡Bellykit</a> </li>
+                    <li> <a href="#" title="Facebook">Facebook</a> </li>
+                </ul>
+            </div>
+
+            <p class="m-0 text-center text-white">Copyright &copy; 倍利金融科技公司 Since 2019</p>
+            <p class="text-center text-white" style="font-size:0.8rem">本系統為雲端化的策略開發平台，所有策略由用戶自行開發與使用，不做任何投資理財建議，請投資者謹慎使用。</p>
+        </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- 以下動畫 -->
+    <script>
+        if ($(window).width() < 480) { //當視窗小於480時才運作
+            $(function() {
+                $('.navbar a').on('click', function() {
+                    $('.navbar-toggler').click();
+                });
+            })
+        };
+    </script>
+
+    <script>
+        const win = document.defaultView;
+        var nav_status = document.getElementsByClassName("navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top")[0];
+
+        function scrolldown() {
+            var scroll_down = document.documentElement.scrollTop;
+            if (scroll_down > 90) {
+                nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-light fixed-top";
+            } else {
+                nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top";
+            }
+        }
+
+        function bg2white() {
+            nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-light fixed-top";
+        }
+
+        window.addEventListener("scroll", scrolldown());
+        $(function() {
+            $('.navbar-toggler').on("click", function() {
+                bg2white();
+            })
+        })
+    </script>
+    <!-- 以上動畫 -->
+</body>
+
+</html>
