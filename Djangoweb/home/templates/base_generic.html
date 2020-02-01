@@ -24,11 +24,8 @@
 
 
 </head>
-<body onscroll=scrolldown() style="min-height: 100vh;">
+<body onscroll=scrolldown() >
    
-
-
-    
     {% block navbar %}
     <nav class="navbar navbar-expand-md navbar-light bg-test fixed-top">
         <div class="container">
@@ -54,7 +51,7 @@
             </div>
         </div>
     </nav>
-    {% endblock navbar %} {% block content %} {% endblock content %}
+    {% endblock navbar %} <div style="min-height: calc( 100vh - 400px );">{% block content %} {% endblock content %}</div>
     <!--    __        -->
     <!--  > . )_      -->
     <!-- ~ (_____>  ~ -->
