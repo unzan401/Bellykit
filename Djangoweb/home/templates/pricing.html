@@ -1,0 +1,187 @@
+{% extends "base_generic.html" %} {% block content %}{% load static %}
+
+<!-- Page Content -->
+<div class="container" style="margin-top:100px;">
+    <h2 class="index-test">選擇您的方案！</h2>
+    <h4 class="index-test">依據使用需求與頻率進行調整與規劃！</h4>
+    <!-- Content Row -->
+    <div class="row justify-content-center">
+        <div class="RWD-table" style="width:100%;">
+            <table class="table table-bordered" style=" background-color: #FFFFFF;">
+                <thead class="fix">
+                    <th class="hterm"></th>
+                    <th class="term1 choose" style="font-size:1.25rem">經濟型</th>
+                    <th class="term2" style="font-size:1.25rem">專業型</th>
+                    <th class="term3" style="font-size:1.25rem">商務型</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 0px;background-color: #EEEEEE;border-block-width: 0 ;"></td>
+                        <td style="padding: 0px;background-color: #EEEEEE;"></td>
+                        <td style="padding: 0px;background-color: #EEEEEE;"></td>
+                        <td style="padding: 0px;background-color: #EEEEEE;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan=3 class="hterm-hidden" style="border-block-start-width: 0;font-size:12pt">
+                            月費
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hterm">月費</td>
+                        <td class="term1 choose">2999</td>
+                        <td class="term2">5999</td>
+                        <td class="term3">8999</td>
+                    </tr>
+                    <tr>
+                        <td class="hterm-hidden" colspan=3 style="font-size:12pt">個人財務檢測
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hterm">個人財務檢測</td>
+                        <td class="term1 choose">&check;</td>
+                        <td class="term2">&check;</td>
+                        <td class="term3">&check;</td>
+                    </tr>
+                    <tr>
+                        <td class="hterm-hidden" colspan=3 style="font-size:12pt">策略指標評估分析
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hterm">策略指標評估分析</td>
+                        <td class="term1 choose">&check;</td>
+                        <td class="term2">&check;</td>
+                        <td class="term3">&check;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="hterm-hidden" colspan=3 style="font-size:12pt">隨時可更換其他策略
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hterm">隨時可更換其他策略</td>
+                        <td class="term1 choose">&cross;</td>
+                        <td class="term2">&check;</td>
+                        <td class="term3">&check;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="hterm-hidden" colspan=3 style="font-size:12pt">手續費1折獨享
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hterm">手續費1折獨享</td>
+                        <td class="term1 choose">&cross;</td>
+                        <td class="term2">&cross;</td>
+                        <td class="term3">&check;</td>
+                    </tr>
+                    <tr>
+                        <td class="hterm-hidden" colspan=3 style="font-size:12pt">最多同時訂閱策略數
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hterm">最多同時訂閱策略數</td>
+                        <td class="term1 choose">1</td>
+                        <td class="term2">2</td>
+                        <td class="term3">4</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <button class="btn btn-danger" style="width:300px;margin-bottom:50px ;">繼續</button>
+    </div>
+    <!-- /.row -->
+
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src='{% static "vendor/jquery/jquery.min.js" %}'></script>
+<script src='{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}'></script>
+
+<script>
+    const term1 = Array.from(document.getElementsByClassName("term1 choose"));
+    const term2 = Array.from(document.getElementsByClassName("term2"));
+    const term3 = Array.from(document.getElementsByClassName("term3"));
+    let choice = 1;
+
+    function changet(t) {
+        t.className += " choose";
+    }
+
+    function reset(t) {
+        t.className = t.className.split(" ")[0];
+    }
+
+    function choose(term) {
+        term1.forEach(function(t) {
+            reset(t);
+        });
+        term2.forEach(function(t) {
+            reset(t);
+        });
+        term3.forEach(function(t) {
+            reset(t);
+        });
+        term.forEach(function(t) {
+            changet(t);
+        });
+    }
+
+    term1.forEach(function(t) {
+        t.addEventListener("click", () => {
+            choose(term1);
+            choice = 1;
+        });
+    })
+
+    term2.forEach(function(t) {
+        t.addEventListener("click", () => {
+            choose(term2);
+            choice = 2;
+        });
+    })
+
+    term3.forEach(function(t) {
+        t.addEventListener("click", () => {
+            choose(term3);
+            choice = 3;
+        });
+    })
+</script>
+<!-- 以下動畫 -->
+<script>
+    if ($(window).width() < 480) { //當視窗小於480時才運作
+        $(function() {
+            $('.navbar a').on('click', function() {
+                $('.navbar-toggler').click();
+            });
+        })
+    };
+</script>
+
+<script>
+    const win = document.defaultView;
+    var nav_status = document.getElementsByClassName("navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top")[0];
+
+    function scrolldown() {
+        var scroll_down = document.documentElement.scrollTop;
+        if (scroll_down > 90) {
+            nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-light fixed-top";
+        } else {
+            nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-test fixed-top";
+        }
+    }
+
+    function bg2white() {
+        nav_status.className = "navbar fixed-top navbar-expand-md navbar-light bg-light fixed-top";
+    }
+
+    window.addEventListener("scroll", scrolldown());
+    $(function() {
+        $('.navbar-toggler').on("click", function() {
+            bg2white();
+        })
+    })
+</script>
+<!-- 以上動畫 -->
+{% endblock content %}
