@@ -9,7 +9,7 @@
         <div class="col-xl-7 col-md-6" style="margin:10px 0;;">
             <h6>累積報酬率</h6>
             <h1 style="text-align:end;display:inline;color: #F8777D;font-weight: 600;">
-                <div class="growup"></div>
+                <!-- <div class="growup"></div> -->
                 {{ ROI }}</h1>
             <text style="margin-left:30px ;">(最近12個月)</text>
         </div>
@@ -111,7 +111,7 @@
         </div>
         <div class="col-lg-8 order-lg-4" style="margin:10px 0">
             <div class="strategybox h-100">
-                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">目前持股</h5>
+                <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;width: 100%;">目前持股 <text style="margin-left:10px;font-size: 0.8rem;">更新時間：{{ current_update_time }} &nbsp 下次更新：{{ current_next_update_time }}</text></h5>
                 <!-- 加更新時間 -->
                 <table class="strategytable2">
                     <thead>
@@ -178,18 +178,125 @@
         <div class="col-12 order-lg-6" style="margin:10px 0">
             <div class="strategybox h-100">
                 <h5 class="borderb" style="padding: 5px;margin-bottom: 5px;">損益圖</h5>
-                <p style=" color:#A1B0C6;width:100%"><button class="btn timetag">1月</button>
+                <!-- <p style=" color:#A1B0C6;width:100%"><button class="btn timetag">1月</button>
                     <button class="btn timetag active" aria-pressed="true">3月</button>
                     <button class="btn timetag">6月</button>
                     <button class="btn timetag">1年</button>
-                    <button class="btn timetag">回測</button><span style="display: inline-block;">
-                        <text style="margin-left: 10px;">最大回檔區間</text>
-                        <text style="color: black;">{{ MDD_interval }}</text></span>
-                </p>
-                <div class="col">
+                    <button class="btn timetag">回測</button><span style="display: inline-block;"> -->
+                        <!-- <text style="margin-left: 10px;">最大回檔區間</text>
+                        <text style="color: black;">{{ MDD_interval }}</text></span> -->
+                <!-- </p> -->
+                <!-- <div class="col">
                     <img src='{% static "image/dashbroad/mainLine_1037X270.5.png" %}' alt="" style="height: auto;width: 100%">
                     <div class="detailgraph" style="height:100%;width:20px;position: absolute;top:0 ;left: 57%"></div>
-                    <img class="detailtag" src='{% static "image/dashbroad/detailhover.png" %}' alt=""></div>
+                    <img class="detailtag" src='{% static "image/dashbroad/detailhover.png" %}' alt=""></div> -->
+
+                    <canvas id="canvas" style="margin: auto;"></canvas>
+                    <script>
+                        var labels= [];
+                        for (i=1;i<32;i++){
+                            labels.push("2019.10."+i.toString());
+                        };
+                        for (i=1;i<31;i++){
+                            labels.push("2019.11."+i.toString());
+                        }
+
+                        var data1=[];
+                        for (i=1;i<61;i++){
+                            data1.push(Math.pow(i,(1/2)));
+                        };
+                        var data2=[];
+                        for (i=1;i<24;i++){
+
+                                data2.push(Math.pow(i,(1/2)));
+
+                        };
+                    
+                        var lineChartData = {
+                        labels: labels, //顯示區間名稱
+                    
+                        datasets: [ {
+                            label: '回測', // tootip 出現的名稱
+                            lineTension: 0, // 曲線的彎度，設0 表示直線
+                            backgroundColor: "#65bcbf",
+                            borderColor: "#65bcbf",
+                            borderWidth: 0,
+                            data: data2, // 資料
+                            fill: false, // 是否填滿色彩
+                        },{
+                            label: '上線', // tootip 出現的名稱
+                            lineTension: 0, // 曲線的彎度，設0 表示直線
+                            backgroundColor: "#ea464d",
+                            borderColor: "#ea464d",
+                            borderWidth: 0,
+                            data: data1, // 資料
+                            fill: false, // 是否填滿色彩
+                            
+                        }]
+                    };
+                    
+                    function drawLineCanvas(ctx,data) {
+                        window.myLine = new Chart(ctx, {  //先建立一個 chart
+                            type: 'line', // 型態
+                            data: data,
+                            options: {
+                                animation:{
+                                    during:0
+                                },
+                                    responsive: true,
+                                    legend: { //是否要顯示圖示
+                                        display: true,
+                                    },
+                                    tooltips: { //是否要顯示 tooltip
+                                        
+                                        intersect:false,
+                                        callbacks:{
+                                            label: function(tooltipItem, data) {
+                                                var label = data.datasets[tooltipItem.datasetIndex].label || '';
+                                                return label;
+                                            },
+                                            afterLabel: function(tooltipItem, data) {
+                                                var label="總報酬率：";
+                                                label += Math.round(tooltipItem.yLabel * 100) / 100;
+                                                label +="%";
+                                                return label;
+                                            },
+                                        }
+                                    
+                                    },
+                                    elements:{
+                                        point:{
+                                            radius:2,
+                                        }
+                                    },
+                                    scales: {  //是否要顯示 x、y 軸
+                                        xAxes: [{
+                                            distribution:"series",
+                                            display: true,
+                                            gridLines:{
+                                                display:false,
+                                            },
+                                        }],
+                                        yAxes: [{
+                                            display: true,
+                                            
+                                            ticks:{
+                                                callback: function(value, index, values) {
+                                                return value+"%";
+                                            }}
+                                        }]
+                                    },
+                                }
+                        });
+                    };
+                    
+                    window.onload = function () {
+                        var ctx = document.getElementById("canvas").getContext("2d");
+                        drawLineCanvas(ctx,lineChartData);
+                    };
+                    
+                    
+                    </script>
             </div>
         </div>
         <div class="col-lg-8 order-lg-8" style="margin:10px 0">
