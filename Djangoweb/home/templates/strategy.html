@@ -1,9 +1,10 @@
 {% extends "base_generic.html" %} {% block content %} {% load static %}
 <link href='{% static "css/dashboard.css" %}' rel="stylesheet">
+
 <div class="container">
     <div class="row" style="margin-top: 20px;">
         <div class="col-xl-5 col-md-6" style="margin:10px 0;">
-            <h3>{{ strategy_id }}</h3>
+            <h3>{{ strategy_name }}</h3>
         </div>
         <div class="col-xl-7 col-md-6" style="margin:10px 0;;">
             <h6>累積報酬率</h6>
@@ -121,14 +122,21 @@
                         <th>損益</th>
                     </thead>
                     <tbody>
+                        {% for current in current_list %}
                         <tr>
                             <td>{{ current_date }}</td>
                             <td>{{ current_name }}</td>
                             <td>{{ current_deal_price }}</td>
                             <td>{{ current_market_price }}</td>
-                            <td>{{ current_income }}</td>
+                            <td {% if incomeoverzero %}
+                                style="color: #F8777D;"  
+                                {% else %}
+                                style="color: #65BCBF;"
+                                {% endif %}>{{ current_income }}</td>
                             <!-- 損益後端要寫變色 -->
                         </tr>
+                        {% endfor %}
+                        
                     </tbody>
                 </table>
 
@@ -146,13 +154,20 @@
                         <th>最新收盤價</th>
                     </thead>
                     <tbody>
+                        {% for expectation in expectation_list %}
                         <tr>
-                            <td>{{ expectation_action }}</td>
+                            <td {% ifequal expectation_action "買" %}
+                                style="color: #F8777D;"  
+                                {% else %}
+                                style="color: #65BCBF;"
+                            {% endifequal %}>{{ expectation_action }}</td>
                             <!-- 操作後端要寫變色 -->
                             <td>{{ expectation_name }}</td>
                             <td>{{ expectation_time }}</td>
                             <td>{{ expectation_market_price }}</td>
-                        </tr>
+                        </tr> 
+                        {% endfor %}
+                        
                     </tbody>
                 </table>
             </div>
