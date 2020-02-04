@@ -25,7 +25,38 @@
 
 </head>
 <body onscroll=scrolldown() >
-   
+    {% block login %}
+    <div id="login" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="row justify-content-center" style="margin-top:40px">
+                <img src='{% static "image/bellykitlogo.png" %}'  height="40px">
+                <img src='{% static "image/bellykitlogo2.png" %}' height="36px" style="margin-left:20px">
+            </div>
+            <h1 class="index-test text-center" style="margin:30px">登入</h1>
+            <div class="form-group">
+                <input type="email" placeholder="email" value="test@bellykit.com" id="loginemail" class="form-control" style="margin:15px 0">
+                <input type="password" placeholder="密碼" value="123" id="loginpassword" class="form-control" style="margin:15px 0">
+                <button class="btn btn-success" onclick=login() type="submit" style="width:100%;margin:15px 0">登入</button>
+                <a href="index.html#register">
+                    <p style="text-align:right;margin-bottom:5px">即刻註冊</p>
+                </a>
+                <a href="#">
+                    <p style="text-align:right">忘記密碼</p>
+                </a>
+                <div style="width:100%;height:1px; background:#BBBBBB;"></div>
+                <div class="row justify-content-center">
+                    <p class="index-test text-center" style="margin-top:-15px;background-color: #FFFFFF;width: 40pt;">或是</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <button class="btn btn-outline-secondary btn-square" id="facebooklog" style="width:45%;margin:0 5px;"><img src="image/facebook.png" alt="facebook" style="height: 25px;margin:0 5px;">Facebook</button>
+                    <button class="btn btn-outline-secondary btn-square" id="googlelog" style="width:45%;margin:0 5px;"><img src="image/google.png" alt="google" style="height: 25px;margin:0 5px;">Google</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+    {% endblock login %}
     {% block navbar %}
     <nav class="navbar navbar-expand-md navbar-light bg-test fixed-top">
         <div class="container">
